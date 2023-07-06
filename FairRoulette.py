@@ -1,7 +1,8 @@
 import random
 random.seed(0)
 class FairRoulette():
-  def_init_(self):
+  def __init__(self):
+    self.pockets = []
     for i in range (1,37):
       self.pockets.append(i)
     self.ball = None
@@ -12,5 +13,5 @@ class FairRoulette():
     if str(pocket) == str(self.ball):
       return amt*self.pocketOdds
     else: return - amt
-  def_str_(self):
+  def __str__(self):
     return 'Fair Roulette'
