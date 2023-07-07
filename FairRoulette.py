@@ -15,3 +15,13 @@ class FairRoulette():
     else: return - amt
   def __str__(self):
     return 'Fair Roulette'
+  
+class Baby():
+  def __init__(self, probSmokes, probEpilepsyGivenSmokes, probEpilepsyGivenNonSmokes):
+    self.motherSmokes = random.choice(range(100)) < probSmokes
+    if self.motherSmokes:
+      self.hasEpilepsy = random.choice(range(100)) < probEpilepsyGivenSmokes
+    else:
+      self.hasEpilepsy = random.choice(range(100)) < probEpilepsyGivenNonSmokes
+  def __str__(self):
+    return 'Baby'
