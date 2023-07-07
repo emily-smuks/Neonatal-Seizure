@@ -24,4 +24,5 @@ class Baby():
     else:
       self.hasEpilepsy = random.choice(range(100)) < probEpilepsyGivenNonSmokes
   def __str__(self):
-    return 'Baby'
+    return 'MaybeEpilepticBaby'
+    
