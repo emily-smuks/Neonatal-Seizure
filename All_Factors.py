@@ -22,33 +22,27 @@ def sample_probability(p):
 
 # Should probEpilepsyGivenSSRI be higher?probEpilepsyGivenAbusesOpioids
 class Baby():
-  def __init__(self, probSmokes=0.0722, probEpilepsyGivenPreTerm=0.07, probSmokingBeforePregnancy=.099, probSmokingPastBefore=0.138, probSmokingFirstTrimester=0.074, probSmokingPastFirst=0.064, probSmokingSecondTrimester=0.064, probPretermGivenBefore=0.123, probPretermGivenFirst=0.134, probPretermGivenSecond=0.138, probOpioid=0.07, probAbusesOpioid=0.014, probNASGivenAbuse=0.75, probEpilepsyGivenOpioidNAS=0.065, probAlcohol=0.303, probFASDgivenAlcohol=0.077, probPretermGivenFASD=0.184, probEpilepsyGivenFASD=0.177, probSSRI=.09, probNASGivenSSRI=0.33, probPreTermControl=0.105, probEpilepsyControl=0.002, probEpilepsyGivenOpioidNAS=0.065, probFASDControl=0.0003):
-    self.motherSmokes = sample_probability(probSmokes)
-    self.motherOpioid = sample_probability(probOpioid)
+  def __init__(self, probEpilepsyGivenPreTerm=0.07, probSmokingBeforePregnancy=.099, probSmokingFirstTrimesterGivenBefore=0.751,probSmokingSecondTrimesterGivenFirst=0.861, probPretermGivenBefore=0.123,probPretermGivenFirst=0.134, probPretermGivenSecond=0.139, probOpioid=0.07, probAbusesOpioid=0.014, probNASGivenAbuse=0.75, probEpilepsyGivenOpioidNAS=0.065, probAlcohol=0.303, probFASDgivenAlcohol=0.077, probPretermGivenFASD=0.184, probEpilepsyGivenFASD=0.177, probSSRI=.09, probNASGivenSSRI=0.33, probPreTermControl=0.105, probEpilepsyControl=0.002, probEpilepsyGivenOpioidNAS=0.065, probFASDControl=0.0003):
+
+    self.motherAbusesOpioid = sample_probability(probAbusesOpioid)
     self.motherAlcohol = sample_probability(probAlcohol)
     self.motherSSRI = sample_probability(probSSRI)
     
-    if self.motherOpioid:
-      self.isNASWithOpioids = sample_probability(probNASGivenOpioid)
+    if self.motherAbusesOpioid:
+      self.hasNAS = sample_probability(probNASGivenAbuse)
     else:
-      self.isNAS = sample_probability(NASControl)
-    if self.isNASWithOpioids:
+      self.hasNAS = sample_probability(NASControl)
+    if self.hasNAS:
       self.hasEpilepsy = sample_probability(probEpilepsyGivenOpioidNAS)
-    else:
-      self.hasEpilepsy = sample_probability(EpilepsyControl)
-
-     
-    
 
     if self.motherAlcohol:
-      self.isFASD = sample_probability(probFASDgivenAlcohol) # is preterm a subset of FASD or vice versa? Does FASD impact probability of preterm?
+      self.hasFASD = sample_probability(probFASDgivenAlcohol) # is preterm a subset of FASD or vice versa? Does FASD impact probability of preterm?
     else:
-      self.isFASD = False
-    if self.isFASD:
+      self.hasFASD = False
+    if self.hasFASD:
       self.isPreTerm = sample_probability(probPretermGivenFASD)
     else: 
       self.isPreterm = False
-
 
     if self.motherSSRI:
       self.isNASGivenSSRI = sample_probability(probNASGivenSSRI)
@@ -59,27 +53,18 @@ class Baby():
     else:
        self.hasEpilepsy = sample_probability(probEpilepsyControl)
     
-
-    if self.motherSmokes:
-      self.smokingBeforePregnancy = sample_probability(probSmokingBeforePregnancy)
-    else:
-      self.smokingAtOtherTime = sample_probability(probSmokingPastBefore)
-
-    if self.smokingAtOtherTime:
-      self.smokingFirstTrimester = sample_probability(probSmokingFirstTrimester)
-    else:
-      self.smokingPastFirst = sample_probability(probSmokingPastFirst)
-    if self.smokingPastFirst:
-      self.smokingSecondTrimester = sample_probability(probSmokingSecondTrimester)
-    else:
-      self.smokingPastSecond = False
-
+    self.smokingBeforePregnancy = sample_probability(probSmokes)
     if self.smokingBeforePregnancy:
-      self.isPreterm = sample_probability(probEpilepsyGivenBefore)
+      self.smokingFirstTrimester = sample_probability(probSmokingFirstTrimesterGivenBefore)
+    if self.smokingFirstTrimester:
+      self.smokingSecondTrimester = sample_probability(probSmokingSecondTrimesterGivenFirst)
+
+    if self.smokingSecondTrimester:
+      self.isPreterm = sample_probability(probPretermGivenSecond)
     elif self.smokingFirstTrimester:
-      self.isPreterm = sample_probability(probEpilepsyGivenFirst)
-    elif self.smokingSecondTrimester:
-      self.isPreterm = sample_probability(probEpilepsyGivenSecond)
+      self.isPreterm = sample_probability(probPretermGivenFirst)
+    elif self.smokingBeforePregnancy:
+      self.isPreterm = sample_probability(probPretermGivenBefore)
     else:
       self.isPreterm = sample_probability(probPreTermControl)
 
@@ -96,10 +81,10 @@ class Baby():
     
 
     # does probEpilepsyGivenAbusesOpioid intersect with prob epilepsy given NAS?
-    probEpilepsy = probEpilepsyControl*not (self.isPreTerm or self.motherAbusesOpioids or self.isFASD or self.motherSSRI) + \
+    probEpilepsy = probEpilepsyControl*not (self.isPreTerm or self.motherAbusesOpioids or self.hasFASD or self.motherSSRI) + \
       probEpilepsyGivenPreTerm*self.isPreTerm + \
       probEpilepsyGivenAbusesOpioids*self.motherAbusesOpioids + \
-      probEpilepsyGivenFASD*self.isFASD + \
+      probEpilepsyGivenFASD*self.hasFASD + \
       probEpilepsyGivenSSRI*self.motherSSRI + \
         # is there difference between SSRI NAS and Opioid NAS?
       probEpilepsyGivenSmokes*self.motherSmokes
