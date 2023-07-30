@@ -7,13 +7,14 @@ def sample_probability(p):
 
 # Should probEpilepsyGivenSSRI be higher?probEpilepsyGivenAbusesOpioids
 class Baby():
-  def __init__(self,  probSmokingBeforePregnancy=.099, probSmokingFirstTrimesterGivenBefore=0.751,probSmokingSecondTrimesterGivenFirst=0.861, probPretermGivenBefore=0.123,probPretermGivenFirst=0.134, probPretermGivenSecond=0.139, probAbusesOpioid=0.014, probOpioidNASGivenAbuse=0.75, probOpioidNASControl=0,  probAlcohol=0.303, probFASDgivenAlcohol=0.077,  probSSRI=.09, probPreTermControl=0.105, probEpilepsyGivenPreTerm=0.07, probEpilepsyGivenOpioidNAS=0.065, probEpilepsyGivenFASD=0.177, probEpilepsyControl=0.002):
+  def __init__(self,  probSmokingBeforePregnancy=.099, probSmokingFirstTrimesterGivenBefore=0.751,probSmokingSecondTrimesterGivenFirst=0.861, probPretermGivenBefore=0.123,probPretermGivenFirst=0.134, probPretermGivenSecond=0.139, probAbusesOpioid=0.014, probOpioidNASGivenAbuse=0.75, probOpioidNASControl=0,  probAlcohol=0.303, probFASDgivenAlcohol=0.077,  probSSRI=.09, probPreTermControl=0.105, probEpilepsyGivenPreTerm=0.07, probEpilepsyGivenOpioidNAS=0.065, probEpilepsyGivenFASD=0.177, probEpilepsyGivenSSRI=0.033, probEpilepsyControl=0.002):
 
     # haven't seen data on seizures due to simple opioid use,
     # so only include opioid abuse
     self.motherAbusesOpioid = sample_probability(probAbusesOpioid)
     self.motherAlcohol = sample_probability(probAlcohol)
     self.motherSSRI = sample_probability(probSSRI)
+    self.smokingBeforePregnancy = sample_probability(probSmokingBeforePregnancy)
     
     if self.motherAbusesOpioid:
       self.hasOpioidNAS = sample_probability(probOpioidNASGivenAbuse)
@@ -25,7 +26,6 @@ class Baby():
     else:
       self.hasFASD = False
     
-    self.smokingBeforePregnancy = sample_probability(probSmokingBeforePregnancy)
     if self.smokingBeforePregnancy:
       self.smokingFirstTrimester = sample_probability(probSmokingFirstTrimesterGivenBefore)
     if self.smokingFirstTrimester:
