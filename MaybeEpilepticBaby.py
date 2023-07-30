@@ -6,7 +6,7 @@ def sample_probability(p):
   return random.uniform(0,1) < p
 
 # Should probEpilepsyGivenSSRI be higher?probEpilepsyGivenAbusesOpioids
-class Baby():
+class MaybeEpilepticBaby():
   def __init__(self,  probSmokingBeforePregnancy=.099, probSmokingFirstTrimesterGivenBefore=0.751,probSmokingSecondTrimesterGivenFirst=0.861, probPretermGivenBefore=0.123,probPretermGivenFirst=0.134, probPretermGivenSecond=0.139, probAbusesOpioid=0.014, probOpioidNASGivenAbuse=0.75, probOpioidNASControl=0,  probAlcohol=0.303, probFASDgivenAlcohol=0.077,  probSSRI=.09, probPreTermControl=0.105, probEpilepsyGivenPreTerm=0.07, probEpilepsyGivenOpioidNAS=0.065, probEpilepsyGivenFASD=0.177, probEpilepsyGivenSSRI=0.033, probEpilepsyControl=0.002):
 
     # haven't seen data on seizures due to simple opioid use,
@@ -28,8 +28,12 @@ class Baby():
     
     if self.smokingBeforePregnancy:
       self.smokingFirstTrimester = sample_probability(probSmokingFirstTrimesterGivenBefore)
+    else:
+      self.smokingFirstTrimester = False
     if self.smokingFirstTrimester:
       self.smokingSecondTrimester = sample_probability(probSmokingSecondTrimesterGivenFirst)
+    else:
+      self.smokingSecondTrimester = False
 
     if self.smokingSecondTrimester:
       self.isPreterm = sample_probability(probPretermGivenSecond)
@@ -43,7 +47,7 @@ class Baby():
     # NOTE: control should be BELOW observed population incidence, since the observed incidence includes babies with risk factors
     # NOTE: assumes that all factors ADD to each other (additive model)
     # If no primary factor, prob = control. Otherwise, equals sum.
-    probEpilepsy = probEpilepsyControl * ~(self.isPreTerm or self.hasOpioidNAS or self.hasFASD or self.motherSSRI) + probEpilepsyGivenPreTerm*self.isPreTerm + probEpilepsyGivenOpioidNAS*self.hasOpioidNAS + probEpilepsyGivenFASD*self.hasFASD + probEpilepsyGivenSSRI*self.motherSSRI
+    probEpilepsy = probEpilepsyControl * ~(self.isPreterm or self.hasOpioidNAS or self.hasFASD or self.motherSSRI) + probEpilepsyGivenPreTerm*self.isPreterm + probEpilepsyGivenOpioidNAS*self.hasOpioidNAS + probEpilepsyGivenFASD*self.hasFASD + probEpilepsyGivenSSRI*self.motherSSRI
 
     self.hasEpilepsy = sample_probability(probEpilepsy)
 
