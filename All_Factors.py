@@ -30,7 +30,7 @@ class Baby():
     self.motherSSRI = sample_probability(probSSRI)
     
     if self.motherAbusesOpioid:
-      self.hasOpioidNAS = sample_probability(probNASGivenAbuse)
+      self.hasOpioidNAS = sample_probability(probOpioidNASGivenAbuse)
     else:
       self.hasOpioidNAS = sample_probability(probOpioidNASControl)
 
