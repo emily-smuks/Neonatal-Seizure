@@ -35,13 +35,9 @@ class Baby():
       self.hasOpioidNAS = sample_probability(probOpioidNASControl)
 
     if self.motherAlcohol:
-      self.hasFASD = sample_probability(probFASDgivenAlcohol) # is preterm a subset of FASD or vice versa? Does FASD impact probability of preterm?
+      self.hasFASD = sample_probability(probFASDgivenAlcohol)
     else:
       self.hasFASD = False
-    if self.hasFASD:
-      self.isPreTerm = sample_probability(probPretermGivenFASD)
-    else: 
-      self.isPreterm = False
     
     self.smokingBeforePregnancy = sample_probability(probSmokingBeforePregnancy)
     if self.smokingBeforePregnancy:
