@@ -54,21 +54,44 @@ def sample_probability(p):
 
 # Should probSeizureGivenSSRI be higher?probSeizureGivenAbusesOpioids
 class MaybeEpilepticBaby():
-  def __init__(self,  probSmokingBeforePregnancy=.099, probSmokingFirstTrimesterGivenBefore=0.751,probSmokingSecondTrimesterGivenFirst=0.861, probPretermGivenBefore=0.123,probPretermGivenFirst=0.134, probPretermGivenSecond=0.139, probAbusesOpioid=0.014, probOpioidNASGivenAbuse=0.75, probOpioidNASControl=0,  probAlcohol=0.303, probFASDgivenAlcohol=0.077,  probSSRI=.09, probPreTermControl=0.105, probSeizureGivenPreTerm=0.07, probSeizureGivenOpioidNAS=0.065, probSeizureGivenFASD=0.177, probSeizureGivenSSRI=0.033, probSeizureControl=0.002,
-    probSmokesGivenAlcohol=0.88, probSmokesGivenNoAlcohol=0.104, probSmokesGivenOpioid=.837, probSmokesGivenNoOpioid=0.107, probAlcoholGivenOpioid=.287, probAlcoholGivenNoOpioid=0.187):
+  def __init__(self,  
+               probSmokingBeforePregnancy=.099, 
+               probSmokingFirstTrimesterGivenBefore=0.751, 
+               probSmokingSecondTrimesterGivenFirst=0.861, 
+               probPretermGivenBefore=0.123,
+               probPretermGivenFirst=0.134, 
+               probPretermGivenSecond=0.139, 
+               probAbusesOpioid=0.014, 
+               probOpioidNASGivenAbuse=0.75, 
+               probOpioidNASControl=0, 
+               probAlcohol=0.303, 
+               probFASDgivenAlcohol=0.077, 
+               probSSRI=.09, 
+               probPreTermControl=0.105, 
+               probSeizureGivenPreTerm=0.07, 
+               probSeizureGivenOpioidNAS=0.065, 
+               probSeizureGivenFASD=0.177, 
+               probSeizureGivenSSRI=0.033, 
+               probSeizureControl=0.002,
+               probSmokesGivenAlcohol=0.88, 
+               probSmokesGivenNoAlcohol=0.104, 
+               probSmokesGivenOpioid=.837, 
+               probSmokesGivenNoOpioid=0.107, 
+               probAlcoholGivenOpioid=.287, 
+               probAlcoholGivenNoOpioid=0.187):
 
     # haven't seen data on seizures due to simple opioid use,
     # so only include opioid abuse
     self.motherAbusesOpioid = sample_probability(probAbusesOpioid)
-    self.motherAlcohol = sample_probability(probAlcohol)
+    # self.motherAlcohol = sample_probability(probAlcohol)
     self.motherSSRI = sample_probability(probSSRI)
     self.smokingBeforePregnancy = sample_probability(probSmokingBeforePregnancy) #DELETE ME
   
   #NEW
-    if self.motherAlcohol:
-      self.smokingBeforePregnancy = sample_probability(probSmokesGivenAlcohol) # ppl that smoke given they drink
-    else:
-      self.smokingBeforePregnancy = sample_probability(probSmokesGivenNoAlcohol)
+    # if self.motherAlcohol:
+    #   self.smokingBeforePregnancy = sample_probability(probSmokesGivenAlcohol) # ppl that smoke given they drink
+    # else:
+    #   self.smokingBeforePregnancy = sample_probability(probSmokesGivenNoAlcohol)
 
     if self.motherAbusesOpioid:
       self.smokingBeforePregnancy = sample_probability(probSmokesGivenOpioid)
