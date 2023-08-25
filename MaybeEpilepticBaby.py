@@ -62,7 +62,7 @@ class MaybeEpilepticBaby():
     self.motherAbusesOpioid = sample_probability(probAbusesOpioid)
     self.motherAlcohol = sample_probability(probAlcohol)
     self.motherSSRI = sample_probability(probSSRI)
-    self.smokingBeforePregnancy = sample_probability(probSmokingBeforePregnancy) #DELETE ME
+   # self.smokingBeforePregnancy = sample_probability(probSmokingBeforePregnancy) #DELETE ME
   
   #NEW
     if self.motherAlcohol:
