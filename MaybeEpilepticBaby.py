@@ -87,7 +87,7 @@ class MaybeEpilepticBaby():
     self.motherSSRI = sample_probability(probSSRI)
    # self.smokingBeforePregnancy = sample_probability(probSmokingBeforePregnancy) #DELETE ME
   
-  #NEW
+  #NEW 
     if self.motherAlcohol:
       self.smokingBeforePregnancy = sample_probability(probSmokesGivenAlcohol) # ppl that smoke given they drink
     else:
@@ -149,7 +149,7 @@ class MaybeEpilepticBaby():
     self.hasSeizure = sample_probability(probSeizure)
 
   def __str__(self):
-      return 'MaybeEpilepticBaby'
+      return 'MaybeEpilepticBaby' 
 
 
   
