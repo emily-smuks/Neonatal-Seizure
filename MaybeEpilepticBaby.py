@@ -80,13 +80,9 @@ class MaybeEpilepticBaby():
                probAlcoholGivenOpioid=.287, 
                probAlcoholGivenNoOpioid=0.187):
 
-    # haven't seen data on seizures due to simple opioid use,
-    # so only include opioid abuse
     self.motherAbusesOpioid = sample_probability(probAbusesOpioid)
     self.motherAlcohol = sample_probability(probAlcohol)
     self.motherSSRI = sample_probability(probSSRI)
-   # self.smokingBeforePregnancy = sample_probability(probSmokingBeforePregnancy) #DELETE ME
-  
   #NEW 
     if self.motherAlcohol:
       self.smokingBeforePregnancy = sample_probability(probSmokesGivenAlcohol) # ppl that smoke given they drink
@@ -103,15 +99,6 @@ class MaybeEpilepticBaby():
     else:
       self.motherAlcohol = sample_probability(probAlcoholGivenNoOpioid) #not fixed
 
-      # p(A) = 0.1
-      # p(S | A) = 0.5; p(S | ~A) = 0
-      # p(S) = 0.05
-      # p(S | A) = P(S,A) / P(A) = P(A | S) P(S) / P(A)
-      # 0.5 = P(A | S) P(S) / P(A)
-      # P(A | S) = 0.5 / 0.05 * 0.1 = 1
-  
-  
-    
     if self.motherAbusesOpioid:
       self.hasOpioidNAS = sample_probability(probOpioidNASGivenAbuse)
     else:
