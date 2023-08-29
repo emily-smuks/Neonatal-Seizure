@@ -73,22 +73,26 @@ class MaybeEpilepticBaby():
                probSeizureGivenFASD=0.177, 
                probSeizureGivenSSRI=0.033, 
                probSeizureControl=0.002,
-               probSmokesGivenAlcohol=0.88, 
-               probSmokesGivenNoAlcohol=0.104, 
-               probSmokesGivenOpioid=.837, 
-               probSmokesGivenNoOpioid=0.107, 
-               probAlcoholGivenOpioid=.287, 
-               probAlcoholGivenNoOpioid=0.187):
+               probSmokesGivenOpioid=.837, # from paper
+               probAlcoholGivenOpioid=.287, # from paper
+               probOpioidGivenSmokes=0.13, # FIXME get from paper
+               probOpioidGivenAlcohol=0.159 # FIXME get from paper
+               ):
+
+    # P(A|~B) = P(~B|A)P(A) / P(~B)
+    # P(A|~B) = (1 - P(B|A))P(A) / P(~B)
+
+    # because P(~B|A) = 1 - P(B|A)
+
+    # calculable parameters
+    probSmokesGivenNoOpioid=(1 - probOpioidGivenSmokes)*probSmokingBeforePregnancy/(1-probAbusesOpioid), 
+    probAlcoholGivenNoOpioid=(1 - probOpioidGivenAlcohol)*probAlcohol/(1-probAbusesOpioid)
 
     self.motherAbusesOpioid = sample_probability(probAbusesOpioid)
-    self.motherAlcohol = sample_probability(probAlcohol)
+    # self.motherAlcohol = sample_probability(probAlcohol)
     self.motherSSRI = sample_probability(probSSRI)
-  #NEW 
-    if self.motherAlcohol:
-      self.smokingBeforePregnancy = sample_probability(probSmokesGivenAlcohol) # ppl that smoke given they drink
-    else:
-      self.smokingBeforePregnancy = sample_probability(probSmokesGivenNoAlcohol)
-
+   # self.smokingBeforePregnancy = sample_probability(probSmokingBeforePregnancy) #DELETE ME
+  
     if self.motherAbusesOpioid:
       self.smokingBeforePregnancy = sample_probability(probSmokesGivenOpioid)
     else:
