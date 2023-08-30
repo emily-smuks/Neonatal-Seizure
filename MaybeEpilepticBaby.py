@@ -64,7 +64,7 @@ class MaybeEpilepticBaby():
                probAbusesOpioid=0.014, 
                probOpioidNASGivenAbuse=0.75, 
                probOpioidNASControl=0, 
-               probAlcohol=0.303, 
+               probAlcohol=0.045, # alcohol ABUSE 
                probFASDgivenAlcohol=0.077, 
                probSSRI=.09, 
                probPreTermControl=0.105, 
@@ -75,8 +75,8 @@ class MaybeEpilepticBaby():
                probSeizureControl=0.002,
                probSmokesGivenOpioid=.837, # from paper
                probAlcoholGivenOpioid=.287, # from paper
-               probOpioidGivenSmokes=0.13, # FIXME get from paper
-               probOpioidGivenAlcohol=0.159 # FIXME get from paper
+               probOpioidGivenSmokes=0.13, # from paper
+               probOpioidGivenAlcohol=0.159 # from paper
                ):
 
     # P(A|~B) = P(~B|A)P(A) / P(~B)
@@ -85,7 +85,7 @@ class MaybeEpilepticBaby():
     # because P(~B|A) = 1 - P(B|A)
 
     # calculable parameters
-    probSmokesGivenNoOpioid=(1 - probOpioidGivenSmokes)*probSmokingBeforePregnancy/(1-probAbusesOpioid), 
+    probSmokesGivenNoOpioid=(1 - probOpioidGivenSmokes)*probSmokingBeforePregnancy/(1-probAbusesOpioid) 
     probAlcoholGivenNoOpioid=(1 - probOpioidGivenAlcohol)*probAlcohol/(1-probAbusesOpioid)
 
     self.motherAbusesOpioid = sample_probability(probAbusesOpioid)
