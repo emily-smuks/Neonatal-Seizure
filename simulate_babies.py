@@ -367,7 +367,6 @@ print(f"[Experiment #{experiment_number}] In this experiment I made probSeizureC
 experiment_number = 5.2
 n_seizing[experiment_number] = test_babies(n_samples,
                         probSSRI=.03, # changed
-                        probSeizureGivenFASD=0.177,
                         probSeizureGivenSSRI=0.0138, # changed
                         probSeizureControl=0.000 # changed
                         )
