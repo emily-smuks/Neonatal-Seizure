@@ -52,22 +52,17 @@ p(s)-p(s|o)= p(s|~o)
 def sample_probability(p):
   return random.uniform(0,1) < p
 
-# Should probSeizureGivenSSRI be higher?probSeizureGivenAbusesOpioids
 class MaybeEpilepticBaby():
   def __init__(self,  
-               probSmokingBeforePregnancy=.099, 
-               probSmokingFirstTrimesterGivenBefore=0.751, 
-               probSmokingSecondTrimesterGivenFirst=0.861, 
-               probPretermGivenBefore=0.123,
-               probPretermGivenFirst=0.134, 
-               probPretermGivenSecond=0.139, 
+               probSmokingDuringPregnancy=0.072, 
+               probPretermGivenSmokes=0.137, 
+               probPreTermControl=0.105, 
                probAbusesOpioid=0.014, 
                probOpioidNASGivenAbuse=0.75, 
                probOpioidNASControl=0, 
                probAlcohol=0.045, # alcohol ABUSE 
                probFASDgivenAlcohol=0.077, 
                probSSRI=.09, 
-               probPreTermControl=0.105, 
                probSeizureGivenPreTerm=0.07, 
                probSeizureGivenOpioidNAS=0.065, 
                probSeizureGivenFASD=0.177, 
@@ -85,18 +80,18 @@ class MaybeEpilepticBaby():
     # because P(~B|A) = 1 - P(B|A)
 
     # calculable parameters
-    probSmokesGivenNoOpioid=(1 - probOpioidGivenSmokes)*probSmokingBeforePregnancy/(1-probAbusesOpioid) 
+    probSmokesGivenNoOpioid=(1 - probOpioidGivenSmokes)*probSmokingDuringPregnancy/(1-probAbusesOpioid) 
     probAlcoholGivenNoOpioid=(1 - probOpioidGivenAlcohol)*probAlcohol/(1-probAbusesOpioid)
 
     self.motherAbusesOpioid = sample_probability(probAbusesOpioid)
     # self.motherAlcohol = sample_probability(probAlcohol)
     self.motherSSRI = sample_probability(probSSRI)
-   # self.smokingBeforePregnancy = sample_probability(probSmokingBeforePregnancy) #DELETE ME
+    self.motherSmokes = sample_probability(probSmokingDuringPregnancy)
   
     if self.motherAbusesOpioid:
-      self.smokingBeforePregnancy = sample_probability(probSmokesGivenOpioid)
+      self.probSmokingDuringPregnancy = sample_probability(probSmokesGivenOpioid)
     else:
-      self.smokingBeforePregnancy = sample_probability(probSmokesGivenNoOpioid) #not fixed
+      self.probSmokingDuringPregnancy = sample_probability(probSmokesGivenNoOpioid) #not fixed
     
     if self.motherAbusesOpioid:
       self.motherAlcohol = sample_probability(probAlcoholGivenOpioid) #not fixed
@@ -113,22 +108,9 @@ class MaybeEpilepticBaby():
     else:
       self.hasFASD = False
     
-    if self.smokingBeforePregnancy:
-      self.smokingFirstTrimester = sample_probability(probSmokingFirstTrimesterGivenBefore)
-    else:
-      self.smokingFirstTrimester = False
-    if self.smokingFirstTrimester:
-      self.smokingSecondTrimester = sample_probability(probSmokingSecondTrimesterGivenFirst)
-    else:
-      self.smokingSecondTrimester = False
-
-    if self.smokingSecondTrimester:
-      self.isPreterm = sample_probability(probPretermGivenSecond)
-    elif self.smokingFirstTrimester:
-      self.isPreterm = sample_probability(probPretermGivenFirst)
-    elif self.smokingBeforePregnancy:
-      self.isPreterm = sample_probability(probPretermGivenBefore)
-    else:
+    if self.motherSmokes: 
+      self.isPreterm = sample_probability(probPretermGivenSmokes)
+    else: 
       self.isPreterm = sample_probability(probPreTermControl)
 #NEW
    
