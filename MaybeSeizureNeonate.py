@@ -54,15 +54,15 @@ def sample_probability(p):
 
 class MaybeEpilepticBaby():
   def __init__(self,  
-               probSmokingDuringPregnancy=0.072, 
+               probSmokingDuringPregnancy=0.16, 
                probPretermGivenSmokes=0.137, 
                probPreTermControl=0.105, 
-               probAbusesOpioid=0.014, 
+               probAbusesOpioid=0.017, 
                probOpioidNASGivenAbuse=0.75, 
                probOpioidNASControl=0, 
-               probAlcohol=0.045, # alcohol ABUSE 
+               probAlcohol=0.161, # alcohol ABUSE 
                probFASDgivenAlcohol=0.077, 
-               probSSRI=.09, 
+               probSSRI=.12, 
                probSeizureGivenPreTerm=0.07, 
                probSeizureGivenOpioidNAS=0.065, 
                probSeizureGivenFASD=0.177, 
