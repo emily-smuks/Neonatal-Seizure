@@ -1,4 +1,4 @@
-from MaybeSeizureNeonate import MaybeEpilepticBaby, sample_probability
+from InitialNeonate import MaybeEpilepticBaby, sample_probability
 
 n_samples = 10000
 
@@ -361,7 +361,7 @@ n_seizing[experiment_number] = test_babies(n_samples,
                         probSeizureControl=0.000 # changed
                         )
 print(f"[Experiment #{experiment_number}] Proportion babies epileptic: {n_seizing[experiment_number]}/{n_samples} ({n_seizing[experiment_number]/n_samples})")
-print(f"[Experiment #{experiment_number}] In this experiment I made probSmokingBeforePregnancy 0 and probSeizureControl 0" )
+print(f"[Experiment #{experiment_number}] In this experiment I made probSmokingDuringPregnancy else and probSeizureControl 0" )
 
 experiment_number = 7.2
 n_seizing[experiment_number] = test_babies(n_samples,
@@ -369,7 +369,7 @@ n_seizing[experiment_number] = test_babies(n_samples,
                         probSeizureControl=0.000 # changed
                         )
 print(f"[Experiment #{experiment_number}] Proportion babies epileptic: {n_seizing[experiment_number]}/{n_samples} ({n_seizing[experiment_number]/n_samples})")
-print(f"[Experiment #{experiment_number}] In this experiment I made probSmokingBeforePregnancy 0 and probSeizureControl 0" )
+print(f"[Experiment #{experiment_number}] In this experiment I made probSmokingDuringPregnancy else and probSeizureControl 0" )
 
 experiment_number = 7.3
 n_seizing[experiment_number] = test_babies(n_samples,
@@ -377,7 +377,7 @@ n_seizing[experiment_number] = test_babies(n_samples,
                         probSeizureControl=0.000 # changed
                         )
 print(f"[Experiment #{experiment_number}] Proportion babies epileptic: {n_seizing[experiment_number]}/{n_samples} ({n_seizing[experiment_number]/n_samples})")
-print(f"[Experiment #{experiment_number}] In this experiment I made probSmokingBeforePregnancy 0 and probSeizureControl 0" )
+print(f"[Experiment #{experiment_number}] In this experiment I made probSmokingDuringPregnancy else and probSeizureControl 0" )
 
 experiment_number = 7.4
 n_seizing[experiment_number] = test_babies(n_samples,
@@ -385,7 +385,7 @@ n_seizing[experiment_number] = test_babies(n_samples,
                         probSeizureControl=0.000 # changed
                         )
 print(f"[Experiment #{experiment_number}] Proportion babies epileptic: {n_seizing[experiment_number]}/{n_samples} ({n_seizing[experiment_number]/n_samples})")
-print(f"[Experiment #{experiment_number}] In this experiment I made probSmokingBeforePregnancy 0 and probSeizureControl 0" )
+print(f"[Experiment #{experiment_number}] In this experiment I made probSmokingDuringPregnancy else and probSeizureControl 0" )
 
 experiment_number = 7.5
 n_seizing[experiment_number] = test_babies(n_samples,
@@ -393,7 +393,7 @@ n_seizing[experiment_number] = test_babies(n_samples,
                         probSeizureControl=0.000 # changed
                         )
 print(f"[Experiment #{experiment_number}] Proportion babies epileptic: {n_seizing[experiment_number]}/{n_samples} ({n_seizing[experiment_number]/n_samples})")
-print(f"[Experiment #{experiment_number}] In this experiment I made probSmokingBeforePregnancy 0 and probSeizureControl 0" )
+print(f"[Experiment #{experiment_number}] In this experiment I made probSmokingDuringPregnancy else and probSeizureControl 0" )
 
 experiment_number = 7.6
 n_seizing[experiment_number] = test_babies(n_samples,
@@ -401,7 +401,7 @@ n_seizing[experiment_number] = test_babies(n_samples,
                         probSeizureControl=0.000 # changed
                         )
 print(f"[Experiment #{experiment_number}] Proportion babies epileptic: {n_seizing[experiment_number]}/{n_samples} ({n_seizing[experiment_number]/n_samples})")
-print(f"[Experiment #{experiment_number}] In this experiment I made probSmokingBeforePregnancy 0 and probSeizureControl 0" )
+print(f"[Experiment #{experiment_number}] In this experiment I made probSmokingDuringPregnancy else and probSeizureControl 0" )
 
 experiment_number = 7.7
 n_seizing[experiment_number] = test_babies(n_samples,
@@ -409,7 +409,7 @@ n_seizing[experiment_number] = test_babies(n_samples,
                         probSeizureControl=0.000 # changed
                         )
 print(f"[Experiment #{experiment_number}] Proportion babies epileptic: {n_seizing[experiment_number]}/{n_samples} ({n_seizing[experiment_number]/n_samples})")
-print(f"[Experiment #{experiment_number}] In this experiment I made probSmokingBeforePregnancy 0 and probSeizureControl 0" )
+print(f"[Experiment #{experiment_number}] In this experiment I made probSmokingDuringPregnancy else and probSeizureControl 0" )
 
 experiment_number = 7.8
 n_seizing[experiment_number] = test_babies(n_samples,
@@ -417,7 +417,7 @@ n_seizing[experiment_number] = test_babies(n_samples,
                         probSeizureControl=0.000 # changed
                         )
 print(f"[Experiment #{experiment_number}] Proportion babies epileptic: {n_seizing[experiment_number]}/{n_samples} ({n_seizing[experiment_number]/n_samples})")
-print(f"[Experiment #{experiment_number}] In this experiment I made probSmokingBeforePregnancy 0 and probSeizureControl 0" )
+print(f"[Experiment #{experiment_number}] In this experiment I made probSmokingDuringPregnancy else and probSeizureControl 0" )
 
 experiment_number = 7.9
 n_seizing[experiment_number] = test_babies(n_samples,
@@ -425,7 +425,7 @@ n_seizing[experiment_number] = test_babies(n_samples,
                         probSeizureControl=0.000 # changed
                         )
 print(f"[Experiment #{experiment_number}] Proportion babies epileptic: {n_seizing[experiment_number]}/{n_samples} ({n_seizing[experiment_number]/n_samples})")
-print(f"[Experiment #{experiment_number}] In this experiment I made probSmokingBeforePregnancy 0 and probSeizureControl 0" )
+print(f"[Experiment #{experiment_number}] In this experiment I made probSmokingDuringPregnancy else and probSeizureControl 0" )
 
 experiment_number = 7.11
 n_seizing[experiment_number] = test_babies(n_samples,
@@ -433,8 +433,7 @@ n_seizing[experiment_number] = test_babies(n_samples,
                         probSeizureControl=0.000 # changed
                         )
 print(f"[Experiment #{experiment_number}] Proportion babies epileptic: {n_seizing[experiment_number]}/{n_samples} ({n_seizing[experiment_number]/n_samples})")
-print(f"[Experiment #{experiment_number}] In this experiment I made probSmokingBeforePregnancy 0 and probSeizureControl 0" )
-
+print(f"[Experiment #{experiment_number}] In this experiment I made probSmokingDuringPregnancy else and probSeizureControl 0" )
 
 # probAbusesOpioids
 
@@ -444,7 +443,7 @@ n_seizing[experiment_number] = test_babies(n_samples,
                         probSeizureControl=0.000 # changed
                         )
 print(f"[Experiment #{experiment_number}] Proportion babies epileptic: {n_seizing[experiment_number]}/{n_samples} ({n_seizing[experiment_number]/n_samples})")
-print(f"[Experiment #{experiment_number}] In this experiment I made probAbusesOpioid 0 and probSeizureControl 0")
+print(f"[Experiment #{experiment_number}] In this experiment I made probAbusesOpioid else and probSeizureControl 0")
 
 
 experiment_number = 8.2
@@ -453,7 +452,7 @@ n_seizing[experiment_number] = test_babies(n_samples,
                         probSeizureControl=0.000 # changed
                         )
 print(f"[Experiment #{experiment_number}] Proportion babies epileptic: {n_seizing[experiment_number]}/{n_samples} ({n_seizing[experiment_number]/n_samples})")
-print(f"[Experiment #{experiment_number}] In this experiment I made probAbusesOpioid 0 and probSeizureControl 0")
+print(f"[Experiment #{experiment_number}] In this experiment I made probAbusesOpioid else and probSeizureControl 0")
 
 
 experiment_number = 8.3
@@ -462,7 +461,7 @@ n_seizing[experiment_number] = test_babies(n_samples,
                         probSeizureControl=0.000 # changed
                         )
 print(f"[Experiment #{experiment_number}] Proportion babies epileptic: {n_seizing[experiment_number]}/{n_samples} ({n_seizing[experiment_number]/n_samples})")
-print(f"[Experiment #{experiment_number}] In this experiment I made probAbusesOpioid 0 and probSeizureControl 0")
+print(f"[Experiment #{experiment_number}] In this experiment I made probAbusesOpioid else and probSeizureControl 0")
 
 
 experiment_number = 8.4
@@ -471,7 +470,7 @@ n_seizing[experiment_number] = test_babies(n_samples,
                         probSeizureControl=0.000 # changed
                         )
 print(f"[Experiment #{experiment_number}] Proportion babies epileptic: {n_seizing[experiment_number]}/{n_samples} ({n_seizing[experiment_number]/n_samples})")
-print(f"[Experiment #{experiment_number}] In this experiment I made probAbusesOpioid 0 and probSeizureControl 0")
+print(f"[Experiment #{experiment_number}] In this experiment I made probAbusesOpioid else and probSeizureControl 0")
 
 
 experiment_number = 8.5
@@ -480,7 +479,7 @@ n_seizing[experiment_number] = test_babies(n_samples,
                         probSeizureControl=0.000 # changed
                         )
 print(f"[Experiment #{experiment_number}] Proportion babies epileptic: {n_seizing[experiment_number]}/{n_samples} ({n_seizing[experiment_number]/n_samples})")
-print(f"[Experiment #{experiment_number}] In this experiment I made probAbusesOpioid 0 and probSeizureControl 0")
+print(f"[Experiment #{experiment_number}] In this experiment I made probAbusesOpioid else and probSeizureControl 0")
 
 
 experiment_number = 8.6
@@ -489,7 +488,7 @@ n_seizing[experiment_number] = test_babies(n_samples,
                         probSeizureControl=0.000 # changed
                         )
 print(f"[Experiment #{experiment_number}] Proportion babies epileptic: {n_seizing[experiment_number]}/{n_samples} ({n_seizing[experiment_number]/n_samples})")
-print(f"[Experiment #{experiment_number}] In this experiment I made probAbusesOpioid 0 and probSeizureControl 0")
+print(f"[Experiment #{experiment_number}] In this experiment I made probAbusesOpioid else and probSeizureControl 0")
 
 
 experiment_number = 8.7
@@ -498,7 +497,7 @@ n_seizing[experiment_number] = test_babies(n_samples,
                         probSeizureControl=0.000 # changed
                         )
 print(f"[Experiment #{experiment_number}] Proportion babies epileptic: {n_seizing[experiment_number]}/{n_samples} ({n_seizing[experiment_number]/n_samples})")
-print(f"[Experiment #{experiment_number}] In this experiment I made probAbusesOpioid 0 and probSeizureControl 0")
+print(f"[Experiment #{experiment_number}] In this experiment I made probAbusesOpioid else and probSeizureControl 0")
 
 
 experiment_number = 8.8
@@ -507,12 +506,10 @@ n_seizing[experiment_number] = test_babies(n_samples,
                         probSeizureControl=0.000 # changed
                         )
 print(f"[Experiment #{experiment_number}] Proportion babies epileptic: {n_seizing[experiment_number]}/{n_samples} ({n_seizing[experiment_number]/n_samples})")
-print(f"[Experiment #{experiment_number}] In this experiment I made probAbusesOpioid 0 and probSeizureControl 0")
+print(f"[Experiment #{experiment_number}] In this experiment I made probAbusesOpioid else and probSeizureControl 0")
 
-#prob motherSmokes second trimester bc that would include all the other trimesters. 
-# CANNOT do third trimester bc of variance in gestation, not as stable and causes uncertainty in literature. 
 
-#probSSRI
+# Changes in probSSRI
 
 experiment_number = 11.1
 n_seizing[experiment_number] = test_babies(n_samples,
@@ -536,7 +533,7 @@ n_seizing[experiment_number] = test_babies(n_samples,
                         probSeizureControl=0.000 # changed
                         )
 print(f"[Experiment #{experiment_number}] Proportion babies epileptic: {n_seizing[experiment_number]}/{n_samples} ({n_seizing[experiment_number]/n_samples})")
-print(f"[Experiment #{experiment_number}] In this experiment I made probSSRI 0 and probSeizureControl 0")
+print(f"[Experiment #{experiment_number}] In this experiment I made probSSRI 0.023 and probSeizureControl 0")
 
 experiment_number = 11.4
 n_seizing[experiment_number] = test_babies(n_samples,
@@ -552,7 +549,7 @@ n_seizing[experiment_number] = test_babies(n_samples,
                         probSeizureControl=0.000 # changed
                         )
 print(f"[Experiment #{experiment_number}] Proportion babies epileptic: {n_seizing[experiment_number]}/{n_samples} ({n_seizing[experiment_number]/n_samples})")
-print(f"[Experiment #{experiment_number}] In this experiment I made probSSRI 0.08 and probSeizureControl 0")
+print(f"[Experiment #{experiment_number}] In this experiment I made probSSRI 0.1 and probSeizureControl 0")
 
 experiment_number = 11.5
 n_seizing[experiment_number] = test_babies(n_samples,
@@ -560,7 +557,7 @@ n_seizing[experiment_number] = test_babies(n_samples,
                         probSeizureControl=0.000 # changed
                         )
 print(f"[Experiment #{experiment_number}] Proportion babies epileptic: {n_seizing[experiment_number]}/{n_samples} ({n_seizing[experiment_number]/n_samples})")
-print(f"[Experiment #{experiment_number}] In this experiment I made probSSRI 0.08 and probSeizureControl 0")
+print(f"[Experiment #{experiment_number}] In this experiment I made probSSRI 0.028 and probSeizureControl 0")
 
 experiment_number = 11.6
 n_seizing[experiment_number] = test_babies(n_samples,
@@ -568,7 +565,7 @@ n_seizing[experiment_number] = test_babies(n_samples,
                         probSeizureControl=0.000 # changed
                         )
 print(f"[Experiment #{experiment_number}] Proportion babies epileptic: {n_seizing[experiment_number]}/{n_samples} ({n_seizing[experiment_number]/n_samples})")
-print(f"[Experiment #{experiment_number}] In this experiment I made probSSRI 0.08 and probSeizureControl 0")
+print(f"[Experiment #{experiment_number}] In this experiment I made probSSRI 0.102 and probSeizureControl 0")
 
 experiment_number = 11.7
 n_seizing[experiment_number] = test_babies(n_samples,
@@ -576,7 +573,7 @@ n_seizing[experiment_number] = test_babies(n_samples,
                         probSeizureControl=0.000 # changed
                         )
 print(f"[Experiment #{experiment_number}] Proportion babies epileptic: {n_seizing[experiment_number]}/{n_samples} ({n_seizing[experiment_number]/n_samples})")
-print(f"[Experiment #{experiment_number}] In this experiment I made probSSRI 0.08 and probSeizureControl 0")
+print(f"[Experiment #{experiment_number}] In this experiment I made probSSRI 0.023 and probSeizureControl 0")
 
 experiment_number = 11.8
 n_seizing[experiment_number] = test_babies(n_samples,
@@ -584,7 +581,7 @@ n_seizing[experiment_number] = test_babies(n_samples,
                         probSeizureControl=0.000 # changed
                         )
 print(f"[Experiment #{experiment_number}] Proportion babies epileptic: {n_seizing[experiment_number]}/{n_samples} ({n_seizing[experiment_number]/n_samples})")
-print(f"[Experiment #{experiment_number}] In this experiment I made probSSRI 0.08 and probSeizureControl 0")
+print(f"[Experiment #{experiment_number}] In this experiment I made probSSRI 0.050 and probSeizureControl 0")
 
 experiment_number = 11.9
 n_seizing[experiment_number] = test_babies(n_samples,
@@ -592,7 +589,7 @@ n_seizing[experiment_number] = test_babies(n_samples,
                         probSeizureControl=0.000 # changed
                         )
 print(f"[Experiment #{experiment_number}] Proportion babies epileptic: {n_seizing[experiment_number]}/{n_samples} ({n_seizing[experiment_number]/n_samples})")
-print(f"[Experiment #{experiment_number}] In this experiment I made probSSRI 0.08 and probSeizureControl 0")
+print(f"[Experiment #{experiment_number}] In this experiment I made probSSRI 0.0007 and probSeizureControl 0")
 
 experiment_number = 11.11
 n_seizing[experiment_number] = test_babies(n_samples,
@@ -600,700 +597,7 @@ n_seizing[experiment_number] = test_babies(n_samples,
                         probSeizureControl=0.000 # changed
                         )
 print(f"[Experiment #{experiment_number}] Proportion babies epileptic: {n_seizing[experiment_number]}/{n_samples} ({n_seizing[experiment_number]/n_samples})")
-print(f"[Experiment #{experiment_number}] In this experiment I made probSSRI 0.08 and probSeizureControl 0")
-
-#correlation: Alcohol and SSRI
-
-experiment_number = 12.10
-n_seizing[experiment_number] = test_babies(n_samples,
-                        probAlcohol=0.03, # changed
-                        probAbusesOpioid=0.0004,
-                        probSeizureControl=0.000 # changed
-                        )
-print(f"[Experiment #{experiment_number}] Proportion babies epileptic: {n_seizing[experiment_number]}/{n_samples} ({n_seizing[experiment_number]/n_samples})")
-print(f"[Experiment #{experiment_number}] In this experiment I made probAlcohol else and probSeizureControl 0")
-experiment_number = 12.11
-n_seizing[experiment_number] = test_babies(n_samples,
-                        probAlcohol=0.03, # changed
-                        probAbusesOpioid=0.0015,
-                        probSeizureControl=0.000 # changed
-                        )
-print(f"[Experiment #{experiment_number}] Proportion babies epileptic: {n_seizing[experiment_number]}/{n_samples} ({n_seizing[experiment_number]/n_samples})")
-print(f"[Experiment #{experiment_number}] In this experiment I made probAlcohol else and probSeizureControl 0")
-
-experiment_number = 12.12
-n_seizing[experiment_number] = test_babies(n_samples,
-                        probAlcohol=0.03, # changed
-                        probAbusesOpioid=0.00314,
-                        probSeizureControl=0.000 # changed
-                        )
-print(f"[Experiment #{experiment_number}] Proportion babies epileptic: {n_seizing[experiment_number]}/{n_samples} ({n_seizing[experiment_number]/n_samples})")
-print(f"[Experiment #{experiment_number}] In this experiment I made probAlcohol else and probSeizureControl 0")
-
-experiment_number = 12.13
-n_seizing[experiment_number] = test_babies(n_samples,
-                        probAlcohol=0.03, # changed
-                        probAbusesOpioid=0.0039,
-                        probSeizureControl=0.000 # changed
-                        )
-print(f"[Experiment #{experiment_number}] Proportion babies epileptic: {n_seizing[experiment_number]}/{n_samples} ({n_seizing[experiment_number]/n_samples})")
-print(f"[Experiment #{experiment_number}] In this experiment I made probAlcohol else and probSeizureControl 0")
-
-experiment_number = 12.14
-n_seizing[experiment_number] = test_babies(n_samples,
-                        probAlcohol=0.03, # changed
-                        probAbusesOpioid=0.01,
-                        probSeizureControl=0.000 # changed
-                        )
-print(f"[Experiment #{experiment_number}] Proportion babies epileptic: {n_seizing[experiment_number]}/{n_samples} ({n_seizing[experiment_number]/n_samples})")
-print(f"[Experiment #{experiment_number}] In this experiment I made probAlcohol else and probSeizureControl 0")
-
-experiment_number = 12.15
-n_seizing[experiment_number] = test_babies(n_samples,
-                        probAlcohol=0.03, # changed
-                        probAbusesOpioid=0.051,
-                        probSeizureControl=0.000 # changed
-                        )
-print(f"[Experiment #{experiment_number}] Proportion babies epileptic: {n_seizing[experiment_number]}/{n_samples} ({n_seizing[experiment_number]/n_samples})")
-print(f"[Experiment #{experiment_number}] In this experiment I made probAlcohol else and probSeizureControl 0")
-
-experiment_number = 12.16
-n_seizing[experiment_number] = test_babies(n_samples,
-                        probAlcohol=0.03, # changed
-                        probAbusesOpioid=0.07,
-                        probSeizureControl=0.000 # changed
-                        )
-print(f"[Experiment #{experiment_number}] Proportion babies epileptic: {n_seizing[experiment_number]}/{n_samples} ({n_seizing[experiment_number]/n_samples})")
-print(f"[Experiment #{experiment_number}] In this experiment I made probAlcohol else and probSeizureControl 0")
-
-experiment_number = 12.21
-n_seizing[experiment_number] = test_babies(n_samples,
-                        probAlcohol=0.0587, # changed
-                        probAbusesOpioid=0.0004,
-                        probSeizureControl=0.000 # changed
-                        )
-print(f"[Experiment #{experiment_number}] Proportion babies epileptic: {n_seizing[experiment_number]}/{n_samples} ({n_seizing[experiment_number]/n_samples})")
-print(f"[Experiment #{experiment_number}] In this experiment I made probAlcohol else and probSeizureControl 0")
-
-experiment_number = 12.22
-n_seizing[experiment_number] = test_babies(n_samples,
-                        probAlcohol=0.0587, # changed
-                        probAbusesOpioid=0.0015,
-                        probSeizureControl=0.000 # changed
-                        )
-print(f"[Experiment #{experiment_number}] Proportion babies epileptic: {n_seizing[experiment_number]}/{n_samples} ({n_seizing[experiment_number]/n_samples})")
-print(f"[Experiment #{experiment_number}] In this experiment I made probAlcohol else and probSeizureControl 0")
-
-experiment_number = 12.23
-n_seizing[experiment_number] = test_babies(n_samples,
-                        probAlcohol=0.0587, # changed
-                        probAbusesOpioid=0.00314,
-                        probSeizureControl=0.000 # changed
-                        )
-print(f"[Experiment #{experiment_number}] Proportion babies epileptic: {n_seizing[experiment_number]}/{n_samples} ({n_seizing[experiment_number]/n_samples})")
-print(f"[Experiment #{experiment_number}] In this experiment I made probAlcohol else and probSeizureControl 0")
-
-experiment_number = 12.24
-n_seizing[experiment_number] = test_babies(n_samples,
-                        probAlcohol=0.0587, # changed
-                        probAbusesOpioid=0.0039,
-                        probSeizureControl=0.000 # changed
-                        )
-print(f"[Experiment #{experiment_number}] Proportion babies epileptic: {n_seizing[experiment_number]}/{n_samples} ({n_seizing[experiment_number]/n_samples})")
-print(f"[Experiment #{experiment_number}] In this experiment I made probAlcohol else and probSeizureControl 0")
-
-experiment_number = 12.25
-n_seizing[experiment_number] = test_babies(n_samples,
-                        probAlcohol=0.0587, # changed
-                        probAbusesOpioid=0.01,
-                        probSeizureControl=0.000 # changed
-                        )
-print(f"[Experiment #{experiment_number}] Proportion babies epileptic: {n_seizing[experiment_number]}/{n_samples} ({n_seizing[experiment_number]/n_samples})")
-print(f"[Experiment #{experiment_number}] In this experiment I made probAlcohol else and probSeizureControl 0")
-
-experiment_number = 12.26
-n_seizing[experiment_number] = test_babies(n_samples,
-                        probAlcohol=0.0587, # changed
-                        probAbusesOpioid=0.051,
-                        probSeizureControl=0.000 # changed
-                        )
-print(f"[Experiment #{experiment_number}] Proportion babies epileptic: {n_seizing[experiment_number]}/{n_samples} ({n_seizing[experiment_number]/n_samples})")
-print(f"[Experiment #{experiment_number}] In this experiment I made probAlcohol else and probSeizureControl 0")
-
-experiment_number = 12.27
-n_seizing[experiment_number] = test_babies(n_samples,
-                        probAlcohol=0.0587, # changed
-                        probAbusesOpioid=0.07,
-                        probSeizureControl=0.000 # changed
-                        )
-print(f"[Experiment #{experiment_number}] Proportion babies epileptic: {n_seizing[experiment_number]}/{n_samples} ({n_seizing[experiment_number]/n_samples})")
-print(f"[Experiment #{experiment_number}] In this experiment I made probAlcohol else and probSeizureControl 0")
-
-experiment_number = 12.31
-n_seizing[experiment_number] = test_babies(n_samples,
-                        probAlcohol=0.06, # changed
-                        probAbusesOpioid=0.0004,
-                        probSeizureControl=0.000 # changed
-                        )
-print(f"[Experiment #{experiment_number}] Proportion babies epileptic: {n_seizing[experiment_number]}/{n_samples} ({n_seizing[experiment_number]/n_samples})")
-print(f"[Experiment #{experiment_number}] In this experiment I made probAlcohol else and probSeizureControl 0")
-experiment_number = 12.32
-n_seizing[experiment_number] = test_babies(n_samples,
-                        probAlcohol=0.06, # changed
-                        probAbusesOpioid=0.0015,
-                        probSeizureControl=0.000 # changed
-                        )
-print(f"[Experiment #{experiment_number}] Proportion babies epileptic: {n_seizing[experiment_number]}/{n_samples} ({n_seizing[experiment_number]/n_samples})")
-print(f"[Experiment #{experiment_number}] In this experiment I made probAlcohol else and probSeizureControl 0")
-
-experiment_number = 12.33
-n_seizing[experiment_number] = test_babies(n_samples,
-                        probAlcohol=0.06, # changed
-                        probAbusesOpioid=0.00314,
-                        probSeizureControl=0.000 # changed
-                        )
-print(f"[Experiment #{experiment_number}] Proportion babies epileptic: {n_seizing[experiment_number]}/{n_samples} ({n_seizing[experiment_number]/n_samples})")
-print(f"[Experiment #{experiment_number}] In this experiment I made probAlcohol else and probSeizureControl 0")
-
-experiment_number = 12.34
-n_seizing[experiment_number] = test_babies(n_samples,
-                        probAlcohol=0.06, # changed
-                        probAbusesOpioid=0.0039,
-                        probSeizureControl=0.000 # changed
-                        )
-print(f"[Experiment #{experiment_number}] Proportion babies epileptic: {n_seizing[experiment_number]}/{n_samples} ({n_seizing[experiment_number]/n_samples})")
-print(f"[Experiment #{experiment_number}] In this experiment I made probAlcohol else and probSeizureControl 0")
-
-experiment_number = 12.35
-n_seizing[experiment_number] = test_babies(n_samples,
-                        probAlcohol=0.06, # changed
-                        probAbusesOpioid=0.01,
-                        probSeizureControl=0.000 # changed
-                        )
-print(f"[Experiment #{experiment_number}] Proportion babies epileptic: {n_seizing[experiment_number]}/{n_samples} ({n_seizing[experiment_number]/n_samples})")
-print(f"[Experiment #{experiment_number}] In this experiment I made probAlcohol else and probSeizureControl 0")
-
-experiment_number = 12.36
-n_seizing[experiment_number] = test_babies(n_samples,
-                        probAlcohol=0.06, # changed
-                        probAbusesOpioid=0.051,
-                        probSeizureControl=0.000 # changed
-                        )
-print(f"[Experiment #{experiment_number}] Proportion babies epileptic: {n_seizing[experiment_number]}/{n_samples} ({n_seizing[experiment_number]/n_samples})")
-print(f"[Experiment #{experiment_number}] In this experiment I made probAlcohol else and probSeizureControl 0")
-
-experiment_number = 12.37
-n_seizing[experiment_number] = test_babies(n_samples,
-                        probAlcohol=0.06, # changed
-                        probAbusesOpioid=0.07,
-                        probSeizureControl=0.000 # changed
-                        )
-print(f"[Experiment #{experiment_number}] Proportion babies epileptic: {n_seizing[experiment_number]}/{n_samples} ({n_seizing[experiment_number]/n_samples})")
-print(f"[Experiment #{experiment_number}] In this experiment I made probAlcohol else and probSeizureControl 0")
-
-experiment_number = 12.41
-n_seizing[experiment_number] = test_babies(n_samples,
-                        probAlcohol=0.064, # changed
-                        probAbusesOpioid=0.0004,
-                        probSeizureControl=0.000 # changed
-                        )
-print(f"[Experiment #{experiment_number}] Proportion babies epileptic: {n_seizing[experiment_number]}/{n_samples} ({n_seizing[experiment_number]/n_samples})")
-print(f"[Experiment #{experiment_number}] In this experiment I made probAlcohol else and probSeizureControl 0")
-
-experiment_number = 12.42
-n_seizing[experiment_number] = test_babies(n_samples,
-                        probAlcohol=0.064, # changed
-                        probAbusesOpioid=0.0015,
-                        probSeizureControl=0.000 # changed
-                        )
-print(f"[Experiment #{experiment_number}] Proportion babies epileptic: {n_seizing[experiment_number]}/{n_samples} ({n_seizing[experiment_number]/n_samples})")
-print(f"[Experiment #{experiment_number}] In this experiment I made probAlcohol else and probSeizureControl 0")
-
-experiment_number = 12.43
-n_seizing[experiment_number] = test_babies(n_samples,
-                        probAlcohol=0.064, # changed
-                        probAbusesOpioid=0.0039,
-                        probSeizureControl=0.000 # changed
-                        )
-print(f"[Experiment #{experiment_number}] Proportion babies epileptic: {n_seizing[experiment_number]}/{n_samples} ({n_seizing[experiment_number]/n_samples})")
-print(f"[Experiment #{experiment_number}] In this experiment I made probAlcohol else and probSeizureControl 0")
-
-experiment_number = 12.44
-n_seizing[experiment_number] = test_babies(n_samples,
-                        probAlcohol=0.064, # changed
-                        probAbusesOpioid=0.0039,
-                        probSeizureControl=0.000 # changed
-                        )
-print(f"[Experiment #{experiment_number}] Proportion babies epileptic: {n_seizing[experiment_number]}/{n_samples} ({n_seizing[experiment_number]/n_samples})")
-print(f"[Experiment #{experiment_number}] In this experiment I made probAlcohol else and probSeizureControl 0")
-
-experiment_number = 12.45
-n_seizing[experiment_number] = test_babies(n_samples,
-                        probAlcohol=0.064, # changed
-                        probAbusesOpioid=0.01,
-                        probSeizureControl=0.000 # changed
-                        )
-print(f"[Experiment #{experiment_number}] Proportion babies epileptic: {n_seizing[experiment_number]}/{n_samples} ({n_seizing[experiment_number]/n_samples})")
-print(f"[Experiment #{experiment_number}] In this experiment I made probAlcohol else and probSeizureControl 0")
-
-experiment_number = 12.46
-n_seizing[experiment_number] = test_babies(n_samples,
-                        probAlcohol=0.064, # changed
-                        probAbusesOpioid=0.051,
-                        probSeizureControl=0.000 # changed
-                        )
-print(f"[Experiment #{experiment_number}] Proportion babies epileptic: {n_seizing[experiment_number]}/{n_samples} ({n_seizing[experiment_number]/n_samples})")
-print(f"[Experiment #{experiment_number}] In this experiment I made probAlcohol else and probSeizureControl 0")
-
-experiment_number = 12.47
-n_seizing[experiment_number] = test_babies(n_samples,
-                        probAlcohol=0.064, # changed
-                        probAbusesOpioid=0.07,
-                        probSeizureControl=0.000 # changed
-                        )
-print(f"[Experiment #{experiment_number}] Proportion babies epileptic: {n_seizing[experiment_number]}/{n_samples} ({n_seizing[experiment_number]/n_samples})")
-print(f"[Experiment #{experiment_number}] In this experiment I made probAlcohol else and probSeizureControl 0")
-
-experiment_number = 12.51
-n_seizing[experiment_number] = test_babies(n_samples,
-                        probAlcohol=0.085, # changed
-                        probAbusesOpioid=0.0004,
-                        probSeizureControl=0.000 # changed
-                        )
-print(f"[Experiment #{experiment_number}] Proportion babies epileptic: {n_seizing[experiment_number]}/{n_samples} ({n_seizing[experiment_number]/n_samples})")
-print(f"[Experiment #{experiment_number}] In this experiment I made probAlcohol else and probSeizureControl 0")
-
-experiment_number = 12.52
-n_seizing[experiment_number] = test_babies(n_samples,
-                        probAlcohol=0.085, # changed
-                        probAbusesOpioid=0.0015,
-                        probSeizureControl=0.000 # changed
-                        )
-print(f"[Experiment #{experiment_number}] Proportion babies epileptic: {n_seizing[experiment_number]}/{n_samples} ({n_seizing[experiment_number]/n_samples})")
-print(f"[Experiment #{experiment_number}] In this experiment I made probAlcohol else and probSeizureControl 0")
-
-experiment_number = 12.53
-n_seizing[experiment_number] = test_babies(n_samples,
-                        probAlcohol=0.085, # changed
-                        probAbusesOpioid=0.00314,
-                        probSeizureControl=0.000 # changed
-                        )
-print(f"[Experiment #{experiment_number}] Proportion babies epileptic: {n_seizing[experiment_number]}/{n_samples} ({n_seizing[experiment_number]/n_samples})")
-print(f"[Experiment #{experiment_number}] In this experiment I made probAlcohol else and probSeizureControl 0")
-
-experiment_number = 12.54
-n_seizing[experiment_number] = test_babies(n_samples,
-                        probAlcohol=0.085, # changed
-                        probAbusesOpioid=0.0039,
-                        probSeizureControl=0.000 # changed
-                        )
-print(f"[Experiment #{experiment_number}] Proportion babies epileptic: {n_seizing[experiment_number]}/{n_samples} ({n_seizing[experiment_number]/n_samples})")
-print(f"[Experiment #{experiment_number}] In this experiment I made probAlcohol else and probSeizureControl 0")
-
-experiment_number = 12.55
-n_seizing[experiment_number] = test_babies(n_samples,
-                        probAlcohol=0.085, # changed
-                        probAbusesOpioid=0.01,
-                        probSeizureControl=0.000 # changed
-                        )
-print(f"[Experiment #{experiment_number}] Proportion babies epileptic: {n_seizing[experiment_number]}/{n_samples} ({n_seizing[experiment_number]/n_samples})")
-print(f"[Experiment #{experiment_number}] In this experiment I made probAlcohol else and probSeizureControl 0")
-
-experiment_number = 12.56
-n_seizing[experiment_number] = test_babies(n_samples,
-                        probAlcohol=0.085, # changed
-                        probAbusesOpioid=0.051,
-                        probSeizureControl=0.000 # changed
-                        )
-print(f"[Experiment #{experiment_number}] Proportion babies epileptic: {n_seizing[experiment_number]}/{n_samples} ({n_seizing[experiment_number]/n_samples})")
-print(f"[Experiment #{experiment_number}] In this experiment I made probAlcohol else and probSeizureControl 0")
-
-experiment_number = 12.57
-n_seizing[experiment_number] = test_babies(n_samples,
-                        probAlcohol=0.085, # changed
-                        probAbusesOpioid=0.07,
-                        probSeizureControl=0.000 # changed
-                        )
-print(f"[Experiment #{experiment_number}] Proportion babies epileptic: {n_seizing[experiment_number]}/{n_samples} ({n_seizing[experiment_number]/n_samples})")
-print(f"[Experiment #{experiment_number}] In this experiment I made probAlcohol else and probSeizureControl 0")
-
-experiment_number = 12.61
-n_seizing[experiment_number] = test_babies(n_samples,
-                        probAlcohol=0.098, # changed
-                        probAbusesOpioid=0.0004,
-                        probSeizureControl=0.000 # changed
-                        )
-print(f"[Experiment #{experiment_number}] Proportion babies epileptic: {n_seizing[experiment_number]}/{n_samples} ({n_seizing[experiment_number]/n_samples})")
-print(f"[Experiment #{experiment_number}] In this experiment I made probAlcohol else and probSeizureControl 0")
-
-experiment_number = 12.62
-n_seizing[experiment_number] = test_babies(n_samples,
-                        probAlcohol=0.098, # changed
-                        probAbusesOpioid=0.0015,
-                        probSeizureControl=0.000 # changed
-                        )
-print(f"[Experiment #{experiment_number}] Proportion babies epileptic: {n_seizing[experiment_number]}/{n_samples} ({n_seizing[experiment_number]/n_samples})")
-print(f"[Experiment #{experiment_number}] In this experiment I made probAlcohol else and probSeizureControl 0")
-
-experiment_number = 12.63
-n_seizing[experiment_number] = test_babies(n_samples,
-                        probAlcohol=0.098, # changed
-                        probAbusesOpioid=0.00314,
-                        probSeizureControl=0.000 # changed
-                        )
-print(f"[Experiment #{experiment_number}] Proportion babies epileptic: {n_seizing[experiment_number]}/{n_samples} ({n_seizing[experiment_number]/n_samples})")
-print(f"[Experiment #{experiment_number}] In this experiment I made probAlcohol else and probSeizureControl 0")
-
-experiment_number = 12.64
-n_seizing[experiment_number] = test_babies(n_samples,
-                        probAlcohol=0.098, # changed
-                        probAbusesOpioid=0.0039,
-                        probSeizureControl=0.000 # changed
-                        )
-print(f"[Experiment #{experiment_number}] Proportion babies epileptic: {n_seizing[experiment_number]}/{n_samples} ({n_seizing[experiment_number]/n_samples})")
-print(f"[Experiment #{experiment_number}] In this experiment I made probAlcohol else and probSeizureControl 0")
-
-experiment_number = 12.65
-n_seizing[experiment_number] = test_babies(n_samples,
-                        probAlcohol=0.098, # changed
-                        probAbusesOpioid=0.01,
-                        probSeizureControl=0.000 # changed
-                        )
-print(f"[Experiment #{experiment_number}] Proportion babies epileptic: {n_seizing[experiment_number]}/{n_samples} ({n_seizing[experiment_number]/n_samples})")
-print(f"[Experiment #{experiment_number}] In this experiment I made probAlcohol else and probSeizureControl 0")
-
-experiment_number = 12.66
-n_seizing[experiment_number] = test_babies(n_samples,
-                        probAlcohol=0.098, # changed
-                        probAbusesOpioid=0.051,
-                        probSeizureControl=0.000 # changed
-                        )
-print(f"[Experiment #{experiment_number}] Proportion babies epileptic: {n_seizing[experiment_number]}/{n_samples} ({n_seizing[experiment_number]/n_samples})")
-print(f"[Experiment #{experiment_number}] In this experiment I made probAlcohol else and probSeizureControl 0")
-
-experiment_number = 12.67
-n_seizing[experiment_number] = test_babies(n_samples,
-                        probAlcohol=0.098, # changed
-                        probAbusesOpioid=0.07,
-                        probSeizureControl=0.000 # changed
-                        )
-print(f"[Experiment #{experiment_number}] Proportion babies epileptic: {n_seizing[experiment_number]}/{n_samples} ({n_seizing[experiment_number]/n_samples})")
-print(f"[Experiment #{experiment_number}] In this experiment I made probAlcohol else and probSeizureControl 0")
-
-experiment_number = 12.71
-n_seizing[experiment_number] = test_babies(n_samples,
-                        probAlcohol=0.102, # changed
-                        probAbusesOpioid=0.0004,
-                        probSeizureControl=0.000 # changed
-                        )
-print(f"[Experiment #{experiment_number}] Proportion babies epileptic: {n_seizing[experiment_number]}/{n_samples} ({n_seizing[experiment_number]/n_samples})")
-print(f"[Experiment #{experiment_number}] In this experiment I made probAlcohol else and probSeizureControl 0")
-
-experiment_number = 12.72
-n_seizing[experiment_number] = test_babies(n_samples,
-                        probAlcohol=0.102, # changed
-                        probAbusesOpioid=0.0015,
-                        probSeizureControl=0.000 # changed
-                        )
-print(f"[Experiment #{experiment_number}] Proportion babies epileptic: {n_seizing[experiment_number]}/{n_samples} ({n_seizing[experiment_number]/n_samples})")
-print(f"[Experiment #{experiment_number}] In this experiment I made probAlcohol else and probSeizureControl 0")
-
-experiment_number = 12.73
-n_seizing[experiment_number] = test_babies(n_samples,
-                        probAlcohol=0.102, # changed
-                        probAbusesOpioid=0.00314,
-                        probSeizureControl=0.000 # changed
-                        )
-print(f"[Experiment #{experiment_number}] Proportion babies epileptic: {n_seizing[experiment_number]}/{n_samples} ({n_seizing[experiment_number]/n_samples})")
-print(f"[Experiment #{experiment_number}] In this experiment I made probAlcohol else and probSeizureControl 0")
-
-experiment_number = 12.74
-n_seizing[experiment_number] = test_babies(n_samples,
-                        probAlcohol=0.102, # changed
-                        probAbusesOpioid=0.0039,
-                        probSeizureControl=0.000 # changed
-                        )
-print(f"[Experiment #{experiment_number}] Proportion babies epileptic: {n_seizing[experiment_number]}/{n_samples} ({n_seizing[experiment_number]/n_samples})")
-print(f"[Experiment #{experiment_number}] In this experiment I made probAlcohol else and probSeizureControl 0")
-
-experiment_number = 12.75
-n_seizing[experiment_number] = test_babies(n_samples,
-                        probAlcohol=0.102, # changed
-                        probAbusesOpioid=0.01,
-                        probSeizureControl=0.000 # changed
-                        )
-print(f"[Experiment #{experiment_number}] Proportion babies epileptic: {n_seizing[experiment_number]}/{n_samples} ({n_seizing[experiment_number]/n_samples})")
-print(f"[Experiment #{experiment_number}] In this experiment I made probAlcohol else and probSeizureControl 0")
-
-experiment_number = 12.76
-n_seizing[experiment_number] = test_babies(n_samples,
-                        probAlcohol=0.102, # changed
-                        probAbusesOpioid=0.051,
-                        probSeizureControl=0.000 # changed
-                        )
-print(f"[Experiment #{experiment_number}] Proportion babies epileptic: {n_seizing[experiment_number]}/{n_samples} ({n_seizing[experiment_number]/n_samples})")
-print(f"[Experiment #{experiment_number}] In this experiment I made probAlcohol else and probSeizureControl 0")
-
-experiment_number = 12.77
-n_seizing[experiment_number] = test_babies(n_samples,
-                        probAlcohol=0.102, # changed
-                        probAbusesOpioid=0.07,
-                        probSeizureControl=0.000 # changed
-                        )
-print(f"[Experiment #{experiment_number}] Proportion babies epileptic: {n_seizing[experiment_number]}/{n_samples} ({n_seizing[experiment_number]/n_samples})")
-print(f"[Experiment #{experiment_number}] In this experiment I made probAlcohol else and probSeizureControl 0")
-
-experiment_number = 12.81
-n_seizing[experiment_number] = test_babies(n_samples,
-                        probAlcohol=0.2, # changed
-                        probAbusesOpioid=0.0004,
-                        probSeizureControl=0.000 # changed
-                        )
-print(f"[Experiment #{experiment_number}] Proportion babies epileptic: {n_seizing[experiment_number]}/{n_samples} ({n_seizing[experiment_number]/n_samples})")
-print(f"[Experiment #{experiment_number}] In this experiment I made probAlcohol else and probSeizureControl 0")
-
-experiment_number = 12.82
-n_seizing[experiment_number] = test_babies(n_samples,
-                        probAlcohol=0.2, # changed
-                        probAbusesOpioid=0.0015,
-                        probSeizureControl=0.000 # changed
-                        )
-print(f"[Experiment #{experiment_number}] Proportion babies epileptic: {n_seizing[experiment_number]}/{n_samples} ({n_seizing[experiment_number]/n_samples})")
-print(f"[Experiment #{experiment_number}] In this experiment I made probAlcohol else and probSeizureControl 0")
-
-experiment_number = 12.83
-n_seizing[experiment_number] = test_babies(n_samples,
-                        probAlcohol=0.2, # changed
-                        probAbusesOpioid=0.00314,
-                        probSeizureControl=0.000 # changed
-                        )
-print(f"[Experiment #{experiment_number}] Proportion babies epileptic: {n_seizing[experiment_number]}/{n_samples} ({n_seizing[experiment_number]/n_samples})")
-print(f"[Experiment #{experiment_number}] In this experiment I made probAlcohol else and probSeizureControl 0")
-
-experiment_number = 12.84
-n_seizing[experiment_number] = test_babies(n_samples,
-                        probAlcohol=0.2, # changed
-                        probAbusesOpioid=0.0039,
-                        probSeizureControl=0.000 # changed
-                        )
-print(f"[Experiment #{experiment_number}] Proportion babies epileptic: {n_seizing[experiment_number]}/{n_samples} ({n_seizing[experiment_number]/n_samples})")
-print(f"[Experiment #{experiment_number}] In this experiment I made probAlcohol else and probSeizureControl 0")
-
-experiment_number = 12.85
-n_seizing[experiment_number] = test_babies(n_samples,
-                        probAlcohol=0.2, # changed
-                        probAbusesOpioid=0.01,
-                        probSeizureControl=0.000 # changed
-                        )
-print(f"[Experiment #{experiment_number}] Proportion babies epileptic: {n_seizing[experiment_number]}/{n_samples} ({n_seizing[experiment_number]/n_samples})")
-print(f"[Experiment #{experiment_number}] In this experiment I made probAlcohol else and probSeizureControl 0")
-
-experiment_number = 12.86
-n_seizing[experiment_number] = test_babies(n_samples,
-                        probAlcohol=0.2, # changed
-                        probAbusesOpioid=0.051,
-                        probSeizureControl=0.000 # changed
-                        )
-print(f"[Experiment #{experiment_number}] Proportion babies epileptic: {n_seizing[experiment_number]}/{n_samples} ({n_seizing[experiment_number]/n_samples})")
-print(f"[Experiment #{experiment_number}] In this experiment I made probAlcohol else and probSeizureControl 0")
-
-experiment_number = 12.87
-n_seizing[experiment_number] = test_babies(n_samples,
-                        probAlcohol=0.2, # changed
-                        probAbusesOpioid=0.07,
-                        probSeizureControl=0.000 # changed
-                        )
-print(f"[Experiment #{experiment_number}] Proportion babies epileptic: {n_seizing[experiment_number]}/{n_samples} ({n_seizing[experiment_number]/n_samples})")
-print(f"[Experiment #{experiment_number}] In this experiment I made probAlcohol else and probSeizureControl 0")
-
-experiment_number = 12.91
-n_seizing[experiment_number] = test_babies(n_samples,
-                        probAlcohol=0.225, # changed
-                        probAbusesOpioid=0.0004,
-                        probSeizureControl=0.000 # changed
-                        )
-print(f"[Experiment #{experiment_number}] Proportion babies epileptic: {n_seizing[experiment_number]}/{n_samples} ({n_seizing[experiment_number]/n_samples})")
-print(f"[Experiment #{experiment_number}] In this experiment I made probAlcohol else and probSeizureControl 0")
-
-experiment_number = 12.92
-n_seizing[experiment_number] = test_babies(n_samples,
-                        probAlcohol=0.225, # changed
-                        probAbusesOpioid=0.0015,
-                        probSeizureControl=0.000 # changed
-                        )
-print(f"[Experiment #{experiment_number}] Proportion babies epileptic: {n_seizing[experiment_number]}/{n_samples} ({n_seizing[experiment_number]/n_samples})")
-print(f"[Experiment #{experiment_number}] In this experiment I made probAlcohol else and probSeizureControl 0")
-
-experiment_number = 12.93
-n_seizing[experiment_number] = test_babies(n_samples,
-                        probAlcohol=0.225, # changed
-                        probAbusesOpioid=0.00314,
-                        probSeizureControl=0.000 # changed
-                        )
-print(f"[Experiment #{experiment_number}] Proportion babies epileptic: {n_seizing[experiment_number]}/{n_samples} ({n_seizing[experiment_number]/n_samples})")
-print(f"[Experiment #{experiment_number}] In this experiment I made probAlcohol else and probSeizureControl 0")
-
-experiment_number = 12.94
-n_seizing[experiment_number] = test_babies(n_samples,
-                        probAlcohol=0.225, # changed
-                        probAbusesOpioid=0.0039,
-                        probSeizureControl=0.000 # changed
-                        )
-print(f"[Experiment #{experiment_number}] Proportion babies epileptic: {n_seizing[experiment_number]}/{n_samples} ({n_seizing[experiment_number]/n_samples})")
-print(f"[Experiment #{experiment_number}] In this experiment I made probAlcohol else and probSeizureControl 0")
-
-experiment_number = 12.95
-n_seizing[experiment_number] = test_babies(n_samples,
-                        probAlcohol=0.225, # changed
-                        probAbusesOpioid=0.01,
-                        probSeizureControl=0.000 # changed
-                        )
-print(f"[Experiment #{experiment_number}] Proportion babies epileptic: {n_seizing[experiment_number]}/{n_samples} ({n_seizing[experiment_number]/n_samples})")
-print(f"[Experiment #{experiment_number}] In this experiment I made probAlcohol else and probSeizureControl 0")
-
-experiment_number = 12.96
-n_seizing[experiment_number] = test_babies(n_samples,
-                        probAlcohol=0.225, # changed
-                        probAbusesOpioid=0.051,
-                        probSeizureControl=0.000 # changed
-                        )
-print(f"[Experiment #{experiment_number}] Proportion babies epileptic: {n_seizing[experiment_number]}/{n_samples} ({n_seizing[experiment_number]/n_samples})")
-print(f"[Experiment #{experiment_number}] In this experiment I made probAlcohol else and probSeizureControl 0")
-
-experiment_number = 12.97
-n_seizing[experiment_number] = test_babies(n_samples,
-                        probAlcohol=0.225, # changed
-                        probAbusesOpioid=0.07,
-                        probSeizureControl=0.000 # changed
-                        )
-print(f"[Experiment #{experiment_number}] Proportion babies epileptic: {n_seizing[experiment_number]}/{n_samples} ({n_seizing[experiment_number]/n_samples})")
-print(f"[Experiment #{experiment_number}] In this experiment I made probAlcohol else and probSeizureControl 0")
-
-experiment_number = 12.101
-n_seizing[experiment_number] = test_babies(n_samples,
-                        probAlcohol=0.303, # changed
-                        probAbusesOpioid=0.0004,
-                        probSeizureControl=0.000 # changed
-                        )
-print(f"[Experiment #{experiment_number}] Proportion babies epileptic: {n_seizing[experiment_number]}/{n_samples} ({n_seizing[experiment_number]/n_samples})")
-print(f"[Experiment #{experiment_number}] In this experiment I made probAlcohol else and probSeizureControl 0")
-
-experiment_number = 12.102
-n_seizing[experiment_number] = test_babies(n_samples,
-                        probAlcohol=0.303, # changed
-                        probAbusesOpioid=0.0015,
-                        probSeizureControl=0.000 # changed
-                        )
-print(f"[Experiment #{experiment_number}] Proportion babies epileptic: {n_seizing[experiment_number]}/{n_samples} ({n_seizing[experiment_number]/n_samples})")
-print(f"[Experiment #{experiment_number}] In this experiment I made probAlcohol else and probSeizureControl 0")
-
-experiment_number = 12.103
-n_seizing[experiment_number] = test_babies(n_samples,
-                        probAlcohol=0.303, # changed
-                        probAbusesOpioid=0.00314,
-                        probSeizureControl=0.000 # changed
-                        )
-print(f"[Experiment #{experiment_number}] Proportion babies epileptic: {n_seizing[experiment_number]}/{n_samples} ({n_seizing[experiment_number]/n_samples})")
-print(f"[Experiment #{experiment_number}] In this experiment I made probAlcohol else and probSeizureControl 0")
-
-experiment_number = 12.104
-n_seizing[experiment_number] = test_babies(n_samples,
-                        probAlcohol=0.303, # changed
-                        probAbusesOpioid=0.0039,
-                        probSeizureControl=0.000 # changed
-                        )
-print(f"[Experiment #{experiment_number}] Proportion babies epileptic: {n_seizing[experiment_number]}/{n_samples} ({n_seizing[experiment_number]/n_samples})")
-print(f"[Experiment #{experiment_number}] In this experiment I made probAlcohol else and probSeizureControl 0")
-
-experiment_number = 12.105
-n_seizing[experiment_number] = test_babies(n_samples,
-                        probAlcohol=0.303, # changed
-                        probAbusesOpioid=0.01,
-                        probSeizureControl=0.000 # changed
-                        )
-print(f"[Experiment #{experiment_number}] Proportion babies epileptic: {n_seizing[experiment_number]}/{n_samples} ({n_seizing[experiment_number]/n_samples})")
-print(f"[Experiment #{experiment_number}] In this experiment I made probAlcohol else and probSeizureControl 0")
-
-experiment_number = 12.106
-n_seizing[experiment_number] = test_babies(n_samples,
-                        probAlcohol=0.303, # changed
-                        probAbusesOpioid=0.051,
-                        probSeizureControl=0.000 # changed
-                        )
-print(f"[Experiment #{experiment_number}] Proportion babies epileptic: {n_seizing[experiment_number]}/{n_samples} ({n_seizing[experiment_number]/n_samples})")
-print(f"[Experiment #{experiment_number}] In this experiment I made probAlcohol else and probSeizureControl 0")
-
-experiment_number = 12.107
-n_seizing[experiment_number] = test_babies(n_samples,
-                        probAlcohol=0.303, # changed
-                        probAbusesOpioid=0.07,
-                        probSeizureControl=0.000 # changed
-                        )
-print(f"[Experiment #{experiment_number}] Proportion babies epileptic: {n_seizing[experiment_number]}/{n_samples} ({n_seizing[experiment_number]/n_samples})")
-print(f"[Experiment #{experiment_number}] In this experiment I made probAlcohol else and probSeizureControl 0")
-
-experiment_number = 12.111
-n_seizing[experiment_number] = test_babies(n_samples,
-                        probAlcohol=0.71, # changed
-                        probAbusesOpioid=0.0004,
-                        probSeizureControl=0.000 # changed
-                        )
-print(f"[Experiment #{experiment_number}] Proportion babies epileptic: {n_seizing[experiment_number]}/{n_samples} ({n_seizing[experiment_number]/n_samples})")
-print(f"[Experiment #{experiment_number}] In this experiment I made probAlcohol else and probSeizureControl 0")
-
-experiment_number = 12.112
-n_seizing[experiment_number] = test_babies(n_samples,
-                        probAlcohol=0.71, # changed
-                        probAbusesOpioid=0.0015,
-                        probSeizureControl=0.000 # changed
-                        )
-print(f"[Experiment #{experiment_number}] Proportion babies epileptic: {n_seizing[experiment_number]}/{n_samples} ({n_seizing[experiment_number]/n_samples})")
-print(f"[Experiment #{experiment_number}] In this experiment I made probAlcohol else and probSeizureControl 0")
-
-experiment_number = 12.113
-n_seizing[experiment_number] = test_babies(n_samples,
-                        probAlcohol=0.71, # changed
-                        probAbusesOpioid=0.00314,
-                        probSeizureControl=0.000 # changed
-                        )
-print(f"[Experiment #{experiment_number}] Proportion babies epileptic: {n_seizing[experiment_number]}/{n_samples} ({n_seizing[experiment_number]/n_samples})")
-print(f"[Experiment #{experiment_number}] In this experiment I made probAlcohol else and probSeizureControl 0")
-
-experiment_number = 12.114
-n_seizing[experiment_number] = test_babies(n_samples,
-                        probAlcohol=0.71, # changed
-                        probAbusesOpioid=0.0039,
-                        probSeizureControl=0.000 # changed
-                        )
-print(f"[Experiment #{experiment_number}] Proportion babies epileptic: {n_seizing[experiment_number]}/{n_samples} ({n_seizing[experiment_number]/n_samples})")
-print(f"[Experiment #{experiment_number}] In this experiment I made probAlcohol else and probSeizureControl 0")
-
-experiment_number = 12.115
-n_seizing[experiment_number] = test_babies(n_samples,
-                        probAlcohol=0.71, # changed
-                        probAbusesOpioid=0.01,
-                        probSeizureControl=0.000 # changed
-                        )
-print(f"[Experiment #{experiment_number}] Proportion babies epileptic: {n_seizing[experiment_number]}/{n_samples} ({n_seizing[experiment_number]/n_samples})")
-print(f"[Experiment #{experiment_number}] In this experiment I made probAlcohol else and probSeizureControl 0")
-
-experiment_number = 12.116
-n_seizing[experiment_number] = test_babies(n_samples,
-                        probAlcohol=0.71, # changed
-                        probAbusesOpioid=0.051,
-                        probSeizureControl=0.000 # changed
-                        )
-print(f"[Experiment #{experiment_number}] Proportion babies epileptic: {n_seizing[experiment_number]}/{n_samples} ({n_seizing[experiment_number]/n_samples})")
-print(f"[Experiment #{experiment_number}] In this experiment I made probAlcohol else and probSeizureControl 0")
-
-experiment_number = 12.117
-n_seizing[experiment_number] = test_babies(n_samples,
-                        probAlcohol=0.71, # changed
-                        probAbusesOpioid=0.07,
-                        probSeizureControl=0.000 # changed
-                        )
-print(f"[Experiment #{experiment_number}] Proportion babies epileptic: {n_seizing[experiment_number]}/{n_samples} ({n_seizing[experiment_number]/n_samples})")
-print(f"[Experiment #{experiment_number}] In this experiment I made probAlcohol else and probSeizureControl 0")
+print(f"[Experiment #{experiment_number}] In this experiment I made probSSRI 0.013 and probSeizureControl 0")
 
 #prob SSRI post-litrev2
 
@@ -1369,7 +673,7 @@ n_seizing[experiment_number] = test_babies(n_samples,
 print(f"[Experiment #{experiment_number}] Proportion babies epileptic: {n_seizing[experiment_number]}/{n_samples} ({n_seizing[experiment_number]/n_samples})")
 print(f"[Experiment #{experiment_number}] In this experiment I made probSSRI 0 and probSeizureControl 0")
 
-            #probSeizureGivenSSRI changes
+#probSeizureGivenSSRI changes
 experiment_number = 14.8
 n_seizing[experiment_number] = test_babies(n_samples,
                         probSeizureGivenSSRI=0.0129, #changed
@@ -1410,8 +714,693 @@ n_seizing[experiment_number] = test_babies(n_samples,
 print(f"[Experiment #{experiment_number}] Proportion babies epileptic: {n_seizing[experiment_number]}/{n_samples} ({n_seizing[experiment_number]/n_samples})")
 print(f"[Experiment #{experiment_number}] In this experiment I made probSeizureGivenSSRI 0 and probSeizureControl 0")
 
-#SSRI and SeizureGivenSSRI together :o
+#Assuming correlation: Alcohol and SSRI
 
+experiment_number = 12.10
+n_seizing[experiment_number] = test_babies(n_samples,
+                        probAlcohol=0.03, # changed
+                        probAbusesOpioid=0.0004,
+                        probSeizureControl=0.000 # changed
+                        )
+print(f"[Experiment #{experiment_number}] Proportion babies epileptic: {n_seizing[experiment_number]}/{n_samples} ({n_seizing[experiment_number]/n_samples})")
+print(f"[Experiment #{experiment_number}] In this experiment I made probAlcohol 0.03, probAbusesOpioid 0.0004 and probSeizureControl 0")
+
+experiment_number = 12.11
+n_seizing[experiment_number] = test_babies(n_samples,
+                        probAlcohol=0.03, # changed
+                        probAbusesOpioid=0.0015,
+                        probSeizureControl=0.000 # changed
+                        )
+print(f"[Experiment #{experiment_number}] Proportion babies epileptic: {n_seizing[experiment_number]}/{n_samples} ({n_seizing[experiment_number]/n_samples})")
+print(f"[Experiment #{experiment_number}] In this experiment I made probAlcohol 0.03, probAbusesOpioid 0.0015 and probSeizureControl 0")
+
+experiment_number = 12.12
+n_seizing[experiment_number] = test_babies(n_samples,
+                        probAlcohol=0.03, # changed
+                        probAbusesOpioid=0.00314,
+                        probSeizureControl=0.000 # changed
+                        )
+print(f"[Experiment #{experiment_number}] Proportion babies epileptic: {n_seizing[experiment_number]}/{n_samples} ({n_seizing[experiment_number]/n_samples})")
+print(f"[Experiment #{experiment_number}] In this experiment I made probAlcohol 0.03, probAbusesOpioid 0.00314 and probSeizureControl 0")
+
+experiment_number = 12.13
+n_seizing[experiment_number] = test_babies(n_samples,
+                        probAlcohol=0.03, # changed
+                        probAbusesOpioid=0.0039,
+                        probSeizureControl=0.000 # changed
+                        )
+print(f"[Experiment #{experiment_number}] Proportion babies epileptic: {n_seizing[experiment_number]}/{n_samples} ({n_seizing[experiment_number]/n_samples})")
+print(f"[Experiment #{experiment_number}] In this experiment I made probAlcohol 0.03, probAbusesOpioid 0.0039 and probSeizureControl 0")
+
+experiment_number = 12.14
+n_seizing[experiment_number] = test_babies(n_samples,
+                        probAlcohol=0.03, # changed
+                        probAbusesOpioid=0.01,
+                        probSeizureControl=0.000 # changed
+                        )
+print(f"[Experiment #{experiment_number}] Proportion babies epileptic: {n_seizing[experiment_number]}/{n_samples} ({n_seizing[experiment_number]/n_samples})")
+print(f"[Experiment #{experiment_number}] In this experiment I made probAlcohol 0.03, probAbusesOpioid 0.01 and probSeizureControl 0")
+
+experiment_number = 12.15
+n_seizing[experiment_number] = test_babies(n_samples,
+                        probAlcohol=0.03, # changed
+                        probAbusesOpioid=0.051,
+                        probSeizureControl=0.000 # changed
+                        )
+print(f"[Experiment #{experiment_number}] Proportion babies epileptic: {n_seizing[experiment_number]}/{n_samples} ({n_seizing[experiment_number]/n_samples})")
+print(f"[Experiment #{experiment_number}] In this experiment I made probAlcohol 0.03, probAbusesOpioid 0.051 and probSeizureControl 0")
+
+experiment_number = 12.16
+n_seizing[experiment_number] = test_babies(n_samples,
+                        probAlcohol=0.03, # changed
+                        probAbusesOpioid=0.07,
+                        probSeizureControl=0.000 # changed
+                        )
+print(f"[Experiment #{experiment_number}] Proportion babies epileptic: {n_seizing[experiment_number]}/{n_samples} ({n_seizing[experiment_number]/n_samples})")
+print(f"[Experiment #{experiment_number}] In this experiment I made probAlcohol 0.03, probAbusesOpioid 0.07 and probSeizureControl 0")
+
+experiment_number = 12.21
+n_seizing[experiment_number] = test_babies(n_samples,
+                        probAlcohol=0.0587, # changed
+                        probAbusesOpioid=0.0004,
+                        probSeizureControl=0.000 # changed
+                        )
+print(f"[Experiment #{experiment_number}] Proportion babies epileptic: {n_seizing[experiment_number]}/{n_samples} ({n_seizing[experiment_number]/n_samples})")
+print(f"[Experiment #{experiment_number}] In this experiment I made probAlcohol 0.0587, probAbusesOpioid 0.0004 and probSeizureControl 0")
+
+experiment_number = 12.22
+n_seizing[experiment_number] = test_babies(n_samples,
+                        probAlcohol=0.0587, # changed
+                        probAbusesOpioid=0.0015,
+                        probSeizureControl=0.000 # changed
+                        )
+print(f"[Experiment #{experiment_number}] Proportion babies epileptic: {n_seizing[experiment_number]}/{n_samples} ({n_seizing[experiment_number]/n_samples})")
+print(f"[Experiment #{experiment_number}] In this experiment I made probAlcohol 0.0587, probAbusesOpioid 0.0015 and probSeizureControl 0")
+
+experiment_number = 12.23
+n_seizing[experiment_number] = test_babies(n_samples,
+                        probAlcohol=0.0587, # changed
+                        probAbusesOpioid=0.00314,
+                        probSeizureControl=0.000 # changed
+                        )
+print(f"[Experiment #{experiment_number}] Proportion babies epileptic: {n_seizing[experiment_number]}/{n_samples} ({n_seizing[experiment_number]/n_samples})")
+print(f"[Experiment #{experiment_number}] In this experiment I made probAlcohol 0.0587, probAbusesOpioid 0.00314 and probSeizureControl 0")
+
+experiment_number = 12.24
+n_seizing[experiment_number] = test_babies(n_samples,
+                        probAlcohol=0.0587, # changed
+                        probAbusesOpioid=0.0039,
+                        probSeizureControl=0.000 # changed
+                        )
+print(f"[Experiment #{experiment_number}] Proportion babies epileptic: {n_seizing[experiment_number]}/{n_samples} ({n_seizing[experiment_number]/n_samples})")
+print(f"[Experiment #{experiment_number}] In this experiment I made probAlcohol 0.0587, probAbusesOpioid 0.0039 and probSeizureControl 0")
+
+experiment_number = 12.25
+n_seizing[experiment_number] = test_babies(n_samples,
+                        probAlcohol=0.0587, # changed
+                        probAbusesOpioid=0.01,
+                        probSeizureControl=0.000 # changed
+                        )
+print(f"[Experiment #{experiment_number}] Proportion babies epileptic: {n_seizing[experiment_number]}/{n_samples} ({n_seizing[experiment_number]/n_samples})")
+print(f"[Experiment #{experiment_number}] In this experiment I made probAlcohol 0.0587, probAbusesOpioid 0.01 and probSeizureControl 0")
+
+experiment_number = 12.26
+n_seizing[experiment_number] = test_babies(n_samples,
+                        probAlcohol=0.0587, # changed
+                        probAbusesOpioid=0.051,
+                        probSeizureControl=0.000 # changed
+                        )
+print(f"[Experiment #{experiment_number}] Proportion babies epileptic: {n_seizing[experiment_number]}/{n_samples} ({n_seizing[experiment_number]/n_samples})")
+print(f"[Experiment #{experiment_number}] In this experiment I made probAlcohol 0.0587, probAbusesOpioid 0.051 and probSeizureControl 0")
+
+experiment_number = 12.27
+n_seizing[experiment_number] = test_babies(n_samples,
+                        probAlcohol=0.0587, # changed
+                        probAbusesOpioid=0.07,
+                        probSeizureControl=0.000 # changed
+                        )
+print(f"[Experiment #{experiment_number}] Proportion babies epileptic: {n_seizing[experiment_number]}/{n_samples} ({n_seizing[experiment_number]/n_samples})")
+print(f"[Experiment #{experiment_number}] In this experiment I made probAlcohol 0.0587, probAbusesOpioid 0.07 and probSeizureControl 0")
+
+experiment_number = 12.31
+n_seizing[experiment_number] = test_babies(n_samples,
+                        probAlcohol=0.06, # changed
+                        probAbusesOpioid=0.0004,
+                        probSeizureControl=0.000 # changed
+                        )
+print(f"[Experiment #{experiment_number}] Proportion babies epileptic: {n_seizing[experiment_number]}/{n_samples} ({n_seizing[experiment_number]/n_samples})")
+print(f"[Experiment #{experiment_number}] In this experiment I made probAlcohol 0.06, probAbusesOpioid 0.0004 and probSeizureControl 0")
+
+experiment_number = 12.32
+n_seizing[experiment_number] = test_babies(n_samples,
+                        probAlcohol=0.06, # changed
+                        probAbusesOpioid=0.0015,
+                        probSeizureControl=0.000 # changed
+                        )
+print(f"[Experiment #{experiment_number}] Proportion babies epileptic: {n_seizing[experiment_number]}/{n_samples} ({n_seizing[experiment_number]/n_samples})")
+print(f"[Experiment #{experiment_number}] In this experiment I made probAlcohol 0.06, probAbusesOpioid 0.0015 and probSeizureControl 0")
+
+experiment_number = 12.33
+n_seizing[experiment_number] = test_babies(n_samples,
+                        probAlcohol=0.06, # changed
+                        probAbusesOpioid=0.00314,
+                        probSeizureControl=0.000 # changed
+                        )
+print(f"[Experiment #{experiment_number}] Proportion babies epileptic: {n_seizing[experiment_number]}/{n_samples} ({n_seizing[experiment_number]/n_samples})")
+print(f"[Experiment #{experiment_number}] In this experiment I made probAlcohol 0.06, probAbusesOpioid 0.00314 and probSeizureControl 0")
+
+experiment_number = 12.34
+n_seizing[experiment_number] = test_babies(n_samples,
+                        probAlcohol=0.06, # changed
+                        probAbusesOpioid=0.0039,
+                        probSeizureControl=0.000 # changed
+                        )
+print(f"[Experiment #{experiment_number}] Proportion babies epileptic: {n_seizing[experiment_number]}/{n_samples} ({n_seizing[experiment_number]/n_samples})")
+print(f"[Experiment #{experiment_number}] In this experiment I made probAlcohol 0.06, probAbusesOpioid 0.0039 and probSeizureControl 0")
+
+experiment_number = 12.35
+n_seizing[experiment_number] = test_babies(n_samples,
+                        probAlcohol=0.06, # changed
+                        probAbusesOpioid=0.01,
+                        probSeizureControl=0.000 # changed
+                        )
+print(f"[Experiment #{experiment_number}] Proportion babies epileptic: {n_seizing[experiment_number]}/{n_samples} ({n_seizing[experiment_number]/n_samples})")
+print(f"[Experiment #{experiment_number}] In this experiment I made probAlcohol 0.06, probAbusesOpioid 0.01 and probSeizureControl 0")
+
+experiment_number = 12.36
+n_seizing[experiment_number] = test_babies(n_samples,
+                        probAlcohol=0.06, # changed
+                        probAbusesOpioid=0.051,
+                        probSeizureControl=0.000 # changed
+                        )
+print(f"[Experiment #{experiment_number}] Proportion babies epileptic: {n_seizing[experiment_number]}/{n_samples} ({n_seizing[experiment_number]/n_samples})")
+print(f"[Experiment #{experiment_number}] In this experiment I made probAlcohol 0.06, probAbusesOpioid 0.051 and probSeizureControl 0")
+
+experiment_number = 12.37
+n_seizing[experiment_number] = test_babies(n_samples,
+                        probAlcohol=0.06, # changed
+                        probAbusesOpioid=0.07,
+                        probSeizureControl=0.000 # changed
+                        )
+print(f"[Experiment #{experiment_number}] Proportion babies epileptic: {n_seizing[experiment_number]}/{n_samples} ({n_seizing[experiment_number]/n_samples})")
+print(f"[Experiment #{experiment_number}] In this experiment I made probAlcohol 0.06, probAbusesOpioid 0.07 and probSeizureControl 0")
+
+experiment_number = 12.41
+n_seizing[experiment_number] = test_babies(n_samples,
+                        probAlcohol=0.064, # changed
+                        probAbusesOpioid=0.0004,
+                        probSeizureControl=0.000 # changed
+                        )
+print(f"[Experiment #{experiment_number}] Proportion babies epileptic: {n_seizing[experiment_number]}/{n_samples} ({n_seizing[experiment_number]/n_samples})")
+print(f"[Experiment #{experiment_number}] In this experiment I made probAlcohol 0.064, probAbusesOpioid 0.0004 and probSeizureControl 0")
+
+experiment_number = 12.42
+n_seizing[experiment_number] = test_babies(n_samples,
+                        probAlcohol=0.064, # changed
+                        probAbusesOpioid=0.0015,
+                        probSeizureControl=0.000 # changed
+                        )
+print(f"[Experiment #{experiment_number}] Proportion babies epileptic: {n_seizing[experiment_number]}/{n_samples} ({n_seizing[experiment_number]/n_samples})")
+print(f"[Experiment #{experiment_number}] In this experiment I made probAlcohol 0.064, probAbusesOpioid 0.0015 and probSeizureControl 0")
+
+experiment_number = 12.43
+n_seizing[experiment_number] = test_babies(n_samples,
+                        probAlcohol=0.064, # changed
+                        probAbusesOpioid=0.0039,
+                        probSeizureControl=0.000 # changed
+                        )
+print(f"[Experiment #{experiment_number}] Proportion babies epileptic: {n_seizing[experiment_number]}/{n_samples} ({n_seizing[experiment_number]/n_samples})")
+print(f"[Experiment #{experiment_number}] In this experiment I made probAlcohol 0.064, probAbusesOpioid 0.0039 and probSeizureControl 0")
+
+experiment_number = 12.45
+n_seizing[experiment_number] = test_babies(n_samples,
+                        probAlcohol=0.064, # changed
+                        probAbusesOpioid=0.01,
+                        probSeizureControl=0.000 # changed
+                        )
+print(f"[Experiment #{experiment_number}] Proportion babies epileptic: {n_seizing[experiment_number]}/{n_samples} ({n_seizing[experiment_number]/n_samples})")
+print(f"[Experiment #{experiment_number}] In this experiment I made probAlcohol 0.064, probAbusesOpioid 0.01 and probSeizureControl 0")
+
+experiment_number = 12.46
+n_seizing[experiment_number] = test_babies(n_samples,
+                        probAlcohol=0.064, # changed
+                        probAbusesOpioid=0.051,
+                        probSeizureControl=0.000 # changed
+                        )
+print(f"[Experiment #{experiment_number}] Proportion babies epileptic: {n_seizing[experiment_number]}/{n_samples} ({n_seizing[experiment_number]/n_samples})")
+print(f"[Experiment #{experiment_number}] In this experiment I made probAlcohol 0.064, probAbusesOpioid 0.051 and probSeizureControl 0")
+
+experiment_number = 12.47
+n_seizing[experiment_number] = test_babies(n_samples,
+                        probAlcohol=0.064, # changed
+                        probAbusesOpioid=0.07,
+                        probSeizureControl=0.000 # changed
+                        )
+print(f"[Experiment #{experiment_number}] Proportion babies epileptic: {n_seizing[experiment_number]}/{n_samples} ({n_seizing[experiment_number]/n_samples})")
+print(f"[Experiment #{experiment_number}] In this experiment I made probAlcohol 0.064, probAbusesOpioid 0.07 and probSeizureControl 0")
+
+experiment_number = 12.51
+n_seizing[experiment_number] = test_babies(n_samples,
+                        probAlcohol=0.085, # changed
+                        probAbusesOpioid=0.0004,
+                        probSeizureControl=0.000 # changed
+                        )
+print(f"[Experiment #{experiment_number}] Proportion babies epileptic: {n_seizing[experiment_number]}/{n_samples} ({n_seizing[experiment_number]/n_samples})")
+print(f"[Experiment #{experiment_number}] In this experiment I made probAlcohol 0.085, probAbusesOpioid 0.0004 and probSeizureControl 0")
+
+experiment_number = 12.52
+n_seizing[experiment_number] = test_babies(n_samples,
+                        probAlcohol=0.085, # changed
+                        probAbusesOpioid=0.0015,
+                        probSeizureControl=0.000 # changed
+                        )
+print(f"[Experiment #{experiment_number}] Proportion babies epileptic: {n_seizing[experiment_number]}/{n_samples} ({n_seizing[experiment_number]/n_samples})")
+print(f"[Experiment #{experiment_number}] In this experiment I made probAlcohol 0.085, probAbusesOpioid 0.0015 and probSeizureControl 0")
+
+experiment_number = 12.53
+n_seizing[experiment_number] = test_babies(n_samples,
+                        probAlcohol=0.085, # changed
+                        probAbusesOpioid=0.00314,
+                        probSeizureControl=0.000 # changed
+                        )
+print(f"[Experiment #{experiment_number}] Proportion babies epileptic: {n_seizing[experiment_number]}/{n_samples} ({n_seizing[experiment_number]/n_samples})")
+print(f"[Experiment #{experiment_number}] In this experiment I made probAlcohol 0.085, probAbusesOpioid 0.00314 and probSeizureControl 0")
+
+experiment_number = 12.54
+n_seizing[experiment_number] = test_babies(n_samples,
+                        probAlcohol=0.085, # changed
+                        probAbusesOpioid=0.0039,
+                        probSeizureControl=0.000 # changed
+                        )
+print(f"[Experiment #{experiment_number}] Proportion babies epileptic: {n_seizing[experiment_number]}/{n_samples} ({n_seizing[experiment_number]/n_samples})")
+print(f"[Experiment #{experiment_number}] In this experiment I made probAlcohol 0.085, probAbusesOpioid 0.0039 and probSeizureControl 0")
+
+experiment_number = 12.55
+n_seizing[experiment_number] = test_babies(n_samples,
+                        probAlcohol=0.085, # changed
+                        probAbusesOpioid=0.01,
+                        probSeizureControl=0.000 # changed
+                        )
+print(f"[Experiment #{experiment_number}] Proportion babies epileptic: {n_seizing[experiment_number]}/{n_samples} ({n_seizing[experiment_number]/n_samples})")
+print(f"[Experiment #{experiment_number}] In this experiment I made probAlcohol 0.085, probAbusesOpioid 0.01 and probSeizureControl 0")
+
+experiment_number = 12.56
+n_seizing[experiment_number] = test_babies(n_samples,
+                        probAlcohol=0.085, # changed
+                        probAbusesOpioid=0.051,
+                        probSeizureControl=0.000 # changed
+                        )
+print(f"[Experiment #{experiment_number}] Proportion babies epileptic: {n_seizing[experiment_number]}/{n_samples} ({n_seizing[experiment_number]/n_samples})")
+print(f"[Experiment #{experiment_number}] In this experiment I made probAlcohol 0.085, probAbusesOpioid 0.051 and probSeizureControl 0")
+
+experiment_number = 12.57
+n_seizing[experiment_number] = test_babies(n_samples,
+                        probAlcohol=0.085, # changed
+                        probAbusesOpioid=0.07,
+                        probSeizureControl=0.000 # changed
+                        )
+print(f"[Experiment #{experiment_number}] Proportion babies epileptic: {n_seizing[experiment_number]}/{n_samples} ({n_seizing[experiment_number]/n_samples})")
+print(f"[Experiment #{experiment_number}] In this experiment I made probAlcohol 0.085, probAbusesOpioid 0.07 and probSeizureControl 0")
+
+experiment_number = 12.61
+n_seizing[experiment_number] = test_babies(n_samples,
+                        probAlcohol=0.098, # changed
+                        probAbusesOpioid=0.0004,
+                        probSeizureControl=0.000 # changed
+                        )
+print(f"[Experiment #{experiment_number}] Proportion babies epileptic: {n_seizing[experiment_number]}/{n_samples} ({n_seizing[experiment_number]/n_samples})")
+print(f"[Experiment #{experiment_number}] In this experiment I made probAlcohol 0.098, probAbusesOpioid 0.0004 and probSeizureControl 0")
+
+experiment_number = 12.62
+n_seizing[experiment_number] = test_babies(n_samples,
+                        probAlcohol=0.098, # changed
+                        probAbusesOpioid=0.0015,
+                        probSeizureControl=0.000 # changed
+                        )
+print(f"[Experiment #{experiment_number}] Proportion babies epileptic: {n_seizing[experiment_number]}/{n_samples} ({n_seizing[experiment_number]/n_samples})")
+print(f"[Experiment #{experiment_number}] In this experiment I made probAlcohol 0.098, probAbusesOpioid 0.0015 and probSeizureControl 0")
+
+experiment_number = 12.63
+n_seizing[experiment_number] = test_babies(n_samples,
+                        probAlcohol=0.098, # changed
+                        probAbusesOpioid=0.00314,
+                        probSeizureControl=0.000 # changed
+                        )
+print(f"[Experiment #{experiment_number}] Proportion babies epileptic: {n_seizing[experiment_number]}/{n_samples} ({n_seizing[experiment_number]/n_samples})")
+print(f"[Experiment #{experiment_number}] In this experiment I made probAlcohol 0.098, probAbusesOpioid 0.00314 and probSeizureControl 0")
+
+experiment_number = 12.64
+n_seizing[experiment_number] = test_babies(n_samples,
+                        probAlcohol=0.098, # changed
+                        probAbusesOpioid=0.0039,
+                        probSeizureControl=0.000 # changed
+                        )
+print(f"[Experiment #{experiment_number}] Proportion babies epileptic: {n_seizing[experiment_number]}/{n_samples} ({n_seizing[experiment_number]/n_samples})")
+print(f"[Experiment #{experiment_number}] In this experiment I made probAlcohol 0.098, probAbusesOpioid 0.0039 and probSeizureControl 0")
+
+experiment_number = 12.65
+n_seizing[experiment_number] = test_babies(n_samples,
+                        probAlcohol=0.098, # changed
+                        probAbusesOpioid=0.01,
+                        probSeizureControl=0.000 # changed
+                        )
+print(f"[Experiment #{experiment_number}] Proportion babies epileptic: {n_seizing[experiment_number]}/{n_samples} ({n_seizing[experiment_number]/n_samples})")
+print(f"[Experiment #{experiment_number}] In this experiment I made probAlcohol 0.098, probAbusesOpioid 0.01 and probSeizureControl 0")
+
+experiment_number = 12.66
+n_seizing[experiment_number] = test_babies(n_samples,
+                        probAlcohol=0.098, # changed
+                        probAbusesOpioid=0.051,
+                        probSeizureControl=0.000 # changed
+                        )
+print(f"[Experiment #{experiment_number}] Proportion babies epileptic: {n_seizing[experiment_number]}/{n_samples} ({n_seizing[experiment_number]/n_samples})")
+print(f"[Experiment #{experiment_number}] In this experiment I made probAlcohol 0.098, probAbusesOpioid 0.051 and probSeizureControl 0")
+
+experiment_number = 12.67
+n_seizing[experiment_number] = test_babies(n_samples,
+                        probAlcohol=0.098, # changed
+                        probAbusesOpioid=0.07,
+                        probSeizureControl=0.000 # changed
+                        )
+print(f"[Experiment #{experiment_number}] Proportion babies epileptic: {n_seizing[experiment_number]}/{n_samples} ({n_seizing[experiment_number]/n_samples})")
+print(f"[Experiment #{experiment_number}] In this experiment I made probAlcohol 0.098, probAbusesOpioid 0.07 and probSeizureControl 0")
+
+experiment_number = 12.71
+n_seizing[experiment_number] = test_babies(n_samples,
+                        probAlcohol=0.102, # changed
+                        probAbusesOpioid=0.0004,
+                        probSeizureControl=0.000 # changed
+                        )
+print(f"[Experiment #{experiment_number}] Proportion babies epileptic: {n_seizing[experiment_number]}/{n_samples} ({n_seizing[experiment_number]/n_samples})")
+print(f"[Experiment #{experiment_number}] In this experiment I made probAlcohol 0.102, probAbusesOpioid 0.0004 and probSeizureControl 0")
+
+experiment_number = 12.72
+n_seizing[experiment_number] = test_babies(n_samples,
+                        probAlcohol=0.102, # changed
+                        probAbusesOpioid=0.0015,
+                        probSeizureControl=0.000 # changed
+                        )
+print(f"[Experiment #{experiment_number}] Proportion babies epileptic: {n_seizing[experiment_number]}/{n_samples} ({n_seizing[experiment_number]/n_samples})")
+print(f"[Experiment #{experiment_number}] In this experiment I made probAlcohol 0.102, probAbusesOpioid 0.0015 and probSeizureControl 0")
+
+experiment_number = 12.73
+n_seizing[experiment_number] = test_babies(n_samples,
+                        probAlcohol=0.102, # changed
+                        probAbusesOpioid=0.00314,
+                        probSeizureControl=0.000 # changed
+                        )
+print(f"[Experiment #{experiment_number}] Proportion babies epileptic: {n_seizing[experiment_number]}/{n_samples} ({n_seizing[experiment_number]/n_samples})")
+print(f"[Experiment #{experiment_number}] In this experiment I made probAlcohol 0.102, probAbusesOpioid 0.00314 and probSeizureControl 0")
+
+experiment_number = 12.74
+n_seizing[experiment_number] = test_babies(n_samples,
+                        probAlcohol=0.102, # changed
+                        probAbusesOpioid=0.0039,
+                        probSeizureControl=0.000 # changed
+                        )
+print(f"[Experiment #{experiment_number}] Proportion babies epileptic: {n_seizing[experiment_number]}/{n_samples} ({n_seizing[experiment_number]/n_samples})")
+print(f"[Experiment #{experiment_number}] In this experiment I made probAlcohol 0.102, probAbusesOpioid 0.0039 and probSeizureControl 0")
+
+experiment_number = 12.75
+n_seizing[experiment_number] = test_babies(n_samples,
+                        probAlcohol=0.102, # changed
+                        probAbusesOpioid=0.01,
+                        probSeizureControl=0.000 # changed
+                        )
+print(f"[Experiment #{experiment_number}] Proportion babies epileptic: {n_seizing[experiment_number]}/{n_samples} ({n_seizing[experiment_number]/n_samples})")
+print(f"[Experiment #{experiment_number}] In this experiment I made probAlcohol 0.102, probAbusesOpioid 0.01 and probSeizureControl 0")
+
+experiment_number = 12.76
+n_seizing[experiment_number] = test_babies(n_samples,
+                        probAlcohol=0.102, # changed
+                        probAbusesOpioid=0.051,
+                        probSeizureControl=0.000 # changed
+                        )
+print(f"[Experiment #{experiment_number}] Proportion babies epileptic: {n_seizing[experiment_number]}/{n_samples} ({n_seizing[experiment_number]/n_samples})")
+print(f"[Experiment #{experiment_number}] In this experiment I made probAlcohol 0.102, probAbusesOpioid 0.051 and probSeizureControl 0")
+
+experiment_number = 12.77
+n_seizing[experiment_number] = test_babies(n_samples,
+                        probAlcohol=0.102, # changed
+                        probAbusesOpioid=0.07,
+                        probSeizureControl=0.000 # changed
+                        )
+print(f"[Experiment #{experiment_number}] Proportion babies epileptic: {n_seizing[experiment_number]}/{n_samples} ({n_seizing[experiment_number]/n_samples})")
+print(f"[Experiment #{experiment_number}] In this experiment I made probAlcohol 0.102, probAbusesOpioid 0.07 and probSeizureControl 0")
+
+experiment_number = 12.81
+n_seizing[experiment_number] = test_babies(n_samples,
+                        probAlcohol=0.2, # changed
+                        probAbusesOpioid=0.0004,
+                        probSeizureControl=0.000 # changed
+                        )
+print(f"[Experiment #{experiment_number}] Proportion babies epileptic: {n_seizing[experiment_number]}/{n_samples} ({n_seizing[experiment_number]/n_samples})")
+print(f"[Experiment #{experiment_number}] In this experiment I made probAlcohol 0.2, probAbusesOpioid 0.0004 and probSeizureControl 0")
+
+experiment_number = 12.82
+n_seizing[experiment_number] = test_babies(n_samples,
+                        probAlcohol=0.2, # changed
+                        probAbusesOpioid=0.0015,
+                        probSeizureControl=0.000 # changed
+                        )
+print(f"[Experiment #{experiment_number}] Proportion babies epileptic: {n_seizing[experiment_number]}/{n_samples} ({n_seizing[experiment_number]/n_samples})")
+print(f"[Experiment #{experiment_number}] In this experiment I made probAlcohol 0.2, probAbusesOpioid 0.0015 and probSeizureControl 0")
+
+experiment_number = 12.83
+n_seizing[experiment_number] = test_babies(n_samples,
+                        probAlcohol=0.2, # changed
+                        probAbusesOpioid=0.00314,
+                        probSeizureControl=0.000 # changed
+                        )
+print(f"[Experiment #{experiment_number}] Proportion babies epileptic: {n_seizing[experiment_number]}/{n_samples} ({n_seizing[experiment_number]/n_samples})")
+print(f"[Experiment #{experiment_number}] In this experiment I made probAlcohol 0.2, probAbusesOpioid 0.00314 and probSeizureControl 0")
+
+experiment_number = 12.84
+n_seizing[experiment_number] = test_babies(n_samples,
+                        probAlcohol=0.2, # changed
+                        probAbusesOpioid=0.0039,
+                        probSeizureControl=0.000 # changed
+                        )
+print(f"[Experiment #{experiment_number}] Proportion babies epileptic: {n_seizing[experiment_number]}/{n_samples} ({n_seizing[experiment_number]/n_samples})")
+print(f"[Experiment #{experiment_number}] In this experiment I made probAlcohol 0.2, probAbusesOpioid 0.0039 and probSeizureControl 0")
+
+experiment_number = 12.85
+n_seizing[experiment_number] = test_babies(n_samples,
+                        probAlcohol=0.2, # changed
+                        probAbusesOpioid=0.01,
+                        probSeizureControl=0.000 # changed
+                        )
+print(f"[Experiment #{experiment_number}] Proportion babies epileptic: {n_seizing[experiment_number]}/{n_samples} ({n_seizing[experiment_number]/n_samples})")
+print(f"[Experiment #{experiment_number}] In this experiment I made probAlcohol 0.2, probAbusesOpioid 0.01 and probSeizureControl 0")
+
+experiment_number = 12.86
+n_seizing[experiment_number] = test_babies(n_samples,
+                        probAlcohol=0.2, # changed
+                        probAbusesOpioid=0.051,
+                        probSeizureControl=0.000 # changed
+                        )
+print(f"[Experiment #{experiment_number}] Proportion babies epileptic: {n_seizing[experiment_number]}/{n_samples} ({n_seizing[experiment_number]/n_samples})")
+print(f"[Experiment #{experiment_number}] In this experiment I made probAlcohol 0.2, probAbusesOpioid 0.051 and probSeizureControl 0")
+
+experiment_number = 12.87
+n_seizing[experiment_number] = test_babies(n_samples,
+                        probAlcohol=0.2, # changed
+                        probAbusesOpioid=0.07,
+                        probSeizureControl=0.000 # changed
+                        )
+print(f"[Experiment #{experiment_number}] Proportion babies epileptic: {n_seizing[experiment_number]}/{n_samples} ({n_seizing[experiment_number]/n_samples})")
+print(f"[Experiment #{experiment_number}] In this experiment I made probAlcohol 0.2, probAbusesOpioid 0.07 and probSeizureControl 0")
+
+experiment_number = 12.91
+n_seizing[experiment_number] = test_babies(n_samples,
+                        probAlcohol=0.225, # changed
+                        probAbusesOpioid=0.0004,
+                        probSeizureControl=0.000 # changed
+                        )
+print(f"[Experiment #{experiment_number}] Proportion babies epileptic: {n_seizing[experiment_number]}/{n_samples} ({n_seizing[experiment_number]/n_samples})")
+print(f"[Experiment #{experiment_number}] In this experiment I made probAlcohol 0.225, probAbusesOpioid 0.0004 and probSeizureControl 0")
+
+experiment_number = 12.92
+n_seizing[experiment_number] = test_babies(n_samples,
+                        probAlcohol=0.225, # changed
+                        probAbusesOpioid=0.0015,
+                        probSeizureControl=0.000 # changed
+                        )
+print(f"[Experiment #{experiment_number}] Proportion babies epileptic: {n_seizing[experiment_number]}/{n_samples} ({n_seizing[experiment_number]/n_samples})")
+print(f"[Experiment #{experiment_number}] In this experiment I made probAlcohol 0.225, probAbusesOpioid 0.0015 and probSeizureControl 0")
+
+experiment_number = 12.93
+n_seizing[experiment_number] = test_babies(n_samples,
+                        probAlcohol=0.225, # changed
+                        probAbusesOpioid=0.00314,
+                        probSeizureControl=0.000 # changed
+                        )
+print(f"[Experiment #{experiment_number}] Proportion babies epileptic: {n_seizing[experiment_number]}/{n_samples} ({n_seizing[experiment_number]/n_samples})")
+print(f"[Experiment #{experiment_number}] In this experiment I made probAlcohol 0.225, probAbusesOpioid 0.00314 and probSeizureControl 0")
+
+experiment_number = 12.94
+n_seizing[experiment_number] = test_babies(n_samples,
+                        probAlcohol=0.225, # changed
+                        probAbusesOpioid=0.0039,
+                        probSeizureControl=0.000 # changed
+                        )
+print(f"[Experiment #{experiment_number}] Proportion babies epileptic: {n_seizing[experiment_number]}/{n_samples} ({n_seizing[experiment_number]/n_samples})")
+print(f"[Experiment #{experiment_number}] In this experiment I made probAlcohol 0.225, probAbusesOpioid 0.0039 and probSeizureControl 0")
+
+experiment_number = 12.95
+n_seizing[experiment_number] = test_babies(n_samples,
+                        probAlcohol=0.225, # changed
+                        probAbusesOpioid=0.01,
+                        probSeizureControl=0.000 # changed
+                        )
+print(f"[Experiment #{experiment_number}] Proportion babies epileptic: {n_seizing[experiment_number]}/{n_samples} ({n_seizing[experiment_number]/n_samples})")
+print(f"[Experiment #{experiment_number}] In this experiment I made probAlcohol 0.225, probAbusesOpioid 0.01 and probSeizureControl 0")
+
+experiment_number = 12.96
+n_seizing[experiment_number] = test_babies(n_samples,
+                        probAlcohol=0.225, # changed
+                        probAbusesOpioid=0.051,
+                        probSeizureControl=0.000 # changed
+                        )
+print(f"[Experiment #{experiment_number}] Proportion babies epileptic: {n_seizing[experiment_number]}/{n_samples} ({n_seizing[experiment_number]/n_samples})")
+print(f"[Experiment #{experiment_number}] In this experiment I made probAlcohol 0.225, probAbusesOpioid 0.051 and probSeizureControl 0")
+
+experiment_number = 12.97
+n_seizing[experiment_number] = test_babies(n_samples,
+                        probAlcohol=0.225, # changed
+                        probAbusesOpioid=0.07,
+                        probSeizureControl=0.000 # changed
+                        )
+print(f"[Experiment #{experiment_number}] Proportion babies epileptic: {n_seizing[experiment_number]}/{n_samples} ({n_seizing[experiment_number]/n_samples})")
+print(f"[Experiment #{experiment_number}] In this experiment I made probAlcohol 0.225, probAbusesOpioid 0.07 and probSeizureControl 0")
+
+experiment_number = 12.101
+n_seizing[experiment_number] = test_babies(n_samples,
+                        probAlcohol=0.303, # changed
+                        probAbusesOpioid=0.0004,
+                        probSeizureControl=0.000 # changed
+                        )
+print(f"[Experiment #{experiment_number}] Proportion babies epileptic: {n_seizing[experiment_number]}/{n_samples} ({n_seizing[experiment_number]/n_samples})")
+print(f"[Experiment #{experiment_number}] In this experiment I made probAlcohol 0.303, probAbusesOpioid 0.0004 and probSeizureControl 0")
+
+experiment_number = 12.102
+n_seizing[experiment_number] = test_babies(n_samples,
+                        probAlcohol=0.303, # changed
+                        probAbusesOpioid=0.0015,
+                        probSeizureControl=0.000 # changed
+                        )
+print(f"[Experiment #{experiment_number}] Proportion babies epileptic: {n_seizing[experiment_number]}/{n_samples} ({n_seizing[experiment_number]/n_samples})")
+print(f"[Experiment #{experiment_number}] In this experiment I made probAlcohol 0.303, probAbusesOpioid 0.0015 and probSeizureControl 0")
+
+experiment_number = 12.103
+n_seizing[experiment_number] = test_babies(n_samples,
+                        probAlcohol=0.303, # changed
+                        probAbusesOpioid=0.00314,
+                        probSeizureControl=0.000 # changed
+                        )
+print(f"[Experiment #{experiment_number}] Proportion babies epileptic: {n_seizing[experiment_number]}/{n_samples} ({n_seizing[experiment_number]/n_samples})")
+print(f"[Experiment #{experiment_number}] In this experiment I made probAlcohol 0.303, probAbusesOpioid 0.00314 and probSeizureControl 0")
+
+experiment_number = 12.104
+n_seizing[experiment_number] = test_babies(n_samples,
+                        probAlcohol=0.303, # changed
+                        probAbusesOpioid=0.0039,
+                        probSeizureControl=0.000 # changed
+                        )
+print(f"[Experiment #{experiment_number}] Proportion babies epileptic: {n_seizing[experiment_number]}/{n_samples} ({n_seizing[experiment_number]/n_samples})")
+print(f"[Experiment #{experiment_number}] In this experiment I made probAlcohol 0.303, probAbusesOpioid 0.0039 and probSeizureControl 0")
+
+experiment_number = 12.105
+n_seizing[experiment_number] = test_babies(n_samples,
+                        probAlcohol=0.303, # changed
+                        probAbusesOpioid=0.01,
+                        probSeizureControl=0.000 # changed
+                        )
+print(f"[Experiment #{experiment_number}] Proportion babies epileptic: {n_seizing[experiment_number]}/{n_samples} ({n_seizing[experiment_number]/n_samples})")
+print(f"[Experiment #{experiment_number}] In this experiment I made probAlcohol 0.303, probAbusesOpioid 0.01 and probSeizureControl 0")
+
+experiment_number = 12.106
+n_seizing[experiment_number] = test_babies(n_samples,
+                        probAlcohol=0.303, # changed
+                        probAbusesOpioid=0.051,
+                        probSeizureControl=0.000 # changed
+                        )
+print(f"[Experiment #{experiment_number}] Proportion babies epileptic: {n_seizing[experiment_number]}/{n_samples} ({n_seizing[experiment_number]/n_samples})")
+print(f"[Experiment #{experiment_number}] In this experiment I made probAlcohol 0.303, probAbusesOpioid 0.051 and probSeizureControl 0")
+
+experiment_number = 12.107
+n_seizing[experiment_number] = test_babies(n_samples,
+                        probAlcohol=0.303, # changed
+                        probAbusesOpioid=0.07,
+                        probSeizureControl=0.000 # changed
+                        )
+print(f"[Experiment #{experiment_number}] Proportion babies epileptic: {n_seizing[experiment_number]}/{n_samples} ({n_seizing[experiment_number]/n_samples})")
+print(f"[Experiment #{experiment_number}] In this experiment I made probAlcohol 0.303, probAbusesOpioid 0.07 and probSeizureControl 0")
+
+experiment_number = 12.111
+n_seizing[experiment_number] = test_babies(n_samples,
+                        probAlcohol=0.71, # changed
+                        probAbusesOpioid=0.0004,
+                        probSeizureControl=0.000 # changed
+                        )
+print(f"[Experiment #{experiment_number}] Proportion babies epileptic: {n_seizing[experiment_number]}/{n_samples} ({n_seizing[experiment_number]/n_samples})")
+print(f"[Experiment #{experiment_number}] In this experiment I made probAlcohol 0.71, probAbusesOpioid 0.0004 and probSeizureControl 0")
+
+experiment_number = 12.112
+n_seizing[experiment_number] = test_babies(n_samples,
+                        probAlcohol=0.71, # changed
+                        probAbusesOpioid=0.0015,
+                        probSeizureControl=0.000 # changed
+                        )
+print(f"[Experiment #{experiment_number}] Proportion babies epileptic: {n_seizing[experiment_number]}/{n_samples} ({n_seizing[experiment_number]/n_samples})")
+print(f"[Experiment #{experiment_number}] In this experiment I made probAlcohol 0.71, probAbusesOpioid 0.0015 and probSeizureControl 0")
+
+experiment_number = 12.113
+n_seizing[experiment_number] = test_babies(n_samples,
+                        probAlcohol=0.71, # changed
+                        probAbusesOpioid=0.00314,
+                        probSeizureControl=0.000 # changed
+                        )
+print(f"[Experiment #{experiment_number}] Proportion babies epileptic: {n_seizing[experiment_number]}/{n_samples} ({n_seizing[experiment_number]/n_samples})")
+print(f"[Experiment #{experiment_number}] In this experiment I made probAlcohol 0.71, probAbusesOpioid 0.00314 and probSeizureControl 0")
+
+experiment_number = 12.114
+n_seizing[experiment_number] = test_babies(n_samples,
+                        probAlcohol=0.71, # changed
+                        probAbusesOpioid=0.0039,
+                        probSeizureControl=0.000 # changed
+                        )
+print(f"[Experiment #{experiment_number}] Proportion babies epileptic: {n_seizing[experiment_number]}/{n_samples} ({n_seizing[experiment_number]/n_samples})")
+print(f"[Experiment #{experiment_number}] In this experiment I made probAlcohol 0.71, probAbusesOpioid 0.0039 and probSeizureControl 0")
+
+experiment_number = 12.115
+n_seizing[experiment_number] = test_babies(n_samples,
+                        probAlcohol=0.71, # changed
+                        probAbusesOpioid=0.01,
+                        probSeizureControl=0.000 # changed
+                        )
+print(f"[Experiment #{experiment_number}] Proportion babies epileptic: {n_seizing[experiment_number]}/{n_samples} ({n_seizing[experiment_number]/n_samples})")
+print(f"[Experiment #{experiment_number}] In this experiment I made probAlcohol 0.71, probAbusesOpioid 0.01 and probSeizureControl 0")
+
+experiment_number = 12.116
+n_seizing[experiment_number] = test_babies(n_samples,
+                        probAlcohol=0.71, # changed
+                        probAbusesOpioid=0.051,
+                        probSeizureControl=0.000 # changed
+                        )
+print(f"[Experiment #{experiment_number}] Proportion babies epileptic: {n_seizing[experiment_number]}/{n_samples} ({n_seizing[experiment_number]/n_samples})")
+print(f"[Experiment #{experiment_number}] In this experiment I made probAlcohol 0.71, probAbusesOpioid 0.051 and probSeizureControl 0")
+
+experiment_number = 12.117
+n_seizing[experiment_number] = test_babies(n_samples,
+                        probAlcohol=0.71, # changed
+                        probAbusesOpioid=0.07,
+                        probSeizureControl=0.000 # changed
+                        )
+print(f"[Experiment #{experiment_number}] Proportion babies epileptic: {n_seizing[experiment_number]}/{n_samples} ({n_seizing[experiment_number]/n_samples})")
+print(f"[Experiment #{experiment_number}] In this experiment I made probAlcohol 0.71, probAbusesOpioid 0.07 and probSeizureControl 0")
+
+#Assuming correlation: probSSRI and probSeizureGivenSSRI
 experiment_number = 14.14
 n_seizing[experiment_number] = test_babies(n_samples,
                         probSSRI=0.0563, #changed
