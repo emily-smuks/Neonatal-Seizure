@@ -68,7 +68,7 @@ class MaybeEpilepticBaby():
                probSeizureGivenFASD=0.177, 
                probSeizureGivenSSRI=0.033, 
                probSeizureControl=0.002,
-               probSmokesGivenOpioid=.837, # from paper
+               probSmokesGivenOpioid=0.837, # from paper
                probAlcoholGivenOpioid=.287, # from paper
                probOpioidGivenSmokes=0.13, # from paper
                probOpioidGivenAlcohol=0.159 # from paper
