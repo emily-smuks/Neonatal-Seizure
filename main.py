@@ -13,16 +13,16 @@ def prob(list, min, max, n_samples): # Func to determine a probability for a con
 def detcond(list_condition, list): # Func to determine whether the neonate suffers from a condition
     for j in list:
         if j >= random.uniform(0, 1):
-            list_condition.append(True)
+            list_condition.append(1.0)
         else:
-            list_condition.append(False)
+            list_condition.append(0.0)
     return list_condition
 
 def probgiven(list_prob, list_condition, min, max, mindefault, maxdefault):
     for k in list_condition:
-        if k == True:
+        if k == 1.0:
             list_prob.append(random.uniform(min, max))
-        elif k == False:
+        elif k == 0.0:
             list_prob.append(random.uniform(mindefault, maxdefault)) # Adds range of control probability, excluding given condition
         else:
             print('An error occured')
@@ -36,7 +36,7 @@ detcond(hasalcohol, probalcohol)
 
 # Determining probabilities and which suffer from FASD
 probFASD = []
-probgiven(probFASD, hasalcohol, 0.00106, 0.11322, 0, 0)
+probgiven(probFASD, hasalcohol, 0.00106, 0.11322, 0.0, 0.0)
 hasFASD = []
 detcond(hasFASD, probFASD)
 
@@ -62,7 +62,7 @@ detcond(hasNAS, probNAS)
 probNS_NAS = []
 probgiven(probNS_NAS, hasNAS, 0.03, 0.21, 0.00081, 0.005)
 hasNS_NAS = []
-detcond(hasNS_FASD, probNS_FASD)
+detcond(hasNS_NAS, probNS_NAS)
 
 # Determining probabilities and which smoke
 probsmoker = []
@@ -89,5 +89,26 @@ hasNS_SSRI = []
 detcond(hasNS_SSRI, probNS_SSRI)
 
 # Creating dataframe
-df = pd.DataFrame(list(zip(probalcohol, hasalcohol, probFASD, hasFASD, probNS_FASD, hasNS_FASD, probopiods, hasopiods, probNAS, hasNAS, probNS_NAS, hasNS_NAS, probsmoker, hassmoker, probNS_smoker, hasNS_smoker, probSSRI, hasSSRI, probNS_SSRI, hasNS_SSRI)), columns = columnlist, index = rowlist)
+df = pd.DataFrame(columns = list(columnlist), index = rowlist)
+df[columnlist[0]] = probalcohol
+df[columnlist[1]] = hasalcohol
+df[columnlist[2]] = probFASD
+df[columnlist[3]] = hasFASD
+df[columnlist[4]] = probNS_FASD
+df[columnlist[5]] = hasNS_FASD
+df[columnlist[6]] = probopiods
+df[columnlist[7]] = hasopiods
+df[columnlist[8]] = probNAS
+df[columnlist[9]] = hasNAS
+df[columnlist[10]] = probNS_NAS
+df[columnlist[11]] = hasNS_NAS
+df[columnlist[12]] = probsmoker
+df[columnlist[13]] = hassmoker
+df[columnlist[14]] = probNS_smoker
+df[columnlist[15]] = hasNS_smoker
+df[columnlist[16]] = probSSRI
+df[columnlist[17]] = hasSSRI
+df[columnlist[18]] = probNS_SSRI
+df[columnlist[19]] = hasNS_SSRI
 
+print(df)
