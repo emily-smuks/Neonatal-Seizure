@@ -1,13 +1,13 @@
 import random
 import pandas as pd
 
-n_samples = 10000000 # Amount of sim neonates
+n_samples = 1000000 # Amount of sim neonates
 rowlist = ['N' + str(i) for i in range(n_samples)] # Creating a list of names for sim neonates
 columnlist = ['P(Alcohol)', 'Alcohol', 'P(FASD | Alcohol)', 'FASD | Alcohol', 'P(NS | FASD)', 'P(Opiods)', 'Opiods', 'P(NOWS | Opiods)', 'NOWS | Opiods', 'P(NS | NOWS)', 'P(Smoker)', 'Smoker', 'P(NS | Smoker)', 'P(SSRI)', 'SSRI', 'P(NS | SSRI)', 'P(NS)', 'NS']
 
-def prob(list_prob, min, max, n_samples): # Determines a probability for a condition between a range for each neonate
+def prob(list_prob, min_value, max_value, n_samples): # Determines a probability for a condition between a range for each neonate
     for _ in range(n_samples):
-        list_prob.append(random.uniform(min, max))
+        list_prob.append(random.uniform(min_value, max_value))
 
 def detcond(list_condition, list_prob): # Determines whether the neonate suffers from a condition
     for j in list_prob:
@@ -16,20 +16,20 @@ def detcond(list_condition, list_prob): # Determines whether the neonate suffers
         else:
             list_condition.append(False)
 
-def probgiven(list_prob, list_condition, min, max, mindefault, maxdefault): # Finds the probability given a factor
+def probgiven(list_prob, list_condition, min_value, max_value, mindefault, maxdefault): # Finds the probability given a factor
     for k in list_condition:
         if k == True:
-            list_prob.append(float(random.uniform(min, max)))
+            list_prob.append(float(random.uniform(min_value, max_value)))
         elif k == False:
             list_prob.append(float(random.uniform(mindefault, maxdefault))) # Adds range of control probability, excluding given condition
         else:
             print('An error occured')
 
-def reeval(list_prob, list_condition_correlated, list_condition, min, max, n_samples): # Reevaluates a probability given a new circumstance
+def reeval(list_prob, list_condition_correlated, list_condition, min_value, max_value, n_samples): # Reevaluates a probability given a new circumstance
     for l in range(n_samples):
         if list_condition_correlated[l] == True:
             if list_condition[l] == False:
-                list_prob[l] += random.uniform(min, max)
+                list_prob[l] += random.uniform(min_value, max_value)
             elif list_condition[l] == True:
                 continue
             else:
@@ -167,4 +167,4 @@ df[columnlist[17]] = hasNS
 
 print(df)
 
-# df.to_excel('Simulated Neonates.xlsx')
+df.to_excel('Simulated Neonates.xlsx')
