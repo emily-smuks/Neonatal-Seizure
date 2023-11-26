@@ -1,7 +1,7 @@
 import random
 import pandas as pd
 
-n_samples = 1000000 # Amount of sim neonates
+n_samples = 10000 # Amount of sim neonates
 rowlist = ['N' + str(i) for i in range(n_samples)] # Creating a list of names for sim neonates
 columnlist = ['P(Alcohol)', 'Alcohol', 'P(FASD | Alcohol)', 'FASD | Alcohol', 'P(NS | FASD)', 'P(Opiods)', 'Opiods', 'P(NOWS | Opiods)', 'NOWS | Opiods', 'P(NS | NOWS)', 'P(Smoker)', 'Smoker', 'P(NS | Smoker)', 'P(SSRI)', 'SSRI', 'P(NS | SSRI)', 'P(NS)', 'NS']
 
@@ -38,14 +38,15 @@ def reeval(list_prob, list_condition_correlated, list_condition, min_value, max_
             continue
         else:
             print('An error occured')
+            
 def reeval_detcond_final_probability(list_condition, list_prob, list_condition_2, list_condition_3, list_condition_4):
     for m in range(n_samples):
         a = 1
         if list_condition_2[m] == True:
             a += 1
-        elif list_condition_3[m] == True:
+        if list_condition_3[m] == True:
             a += 1
-        elif list_condition_4[m] == True:
+        if list_condition_4[m] == True:
             a += 1
         list_prob[m] /= a
         if list_condition[m] == True:
@@ -165,6 +166,6 @@ df[columnlist[15]] = probNS_SSRI
 df[columnlist[16]] = probNS
 df[columnlist[17]] = hasNS
 
-print(df)
+# print(df)
 
-df.to_excel('Simulated Neonates.xlsx')
+# df.to_excel('Simulated Neonates.xlsx')
