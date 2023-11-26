@@ -1,7 +1,7 @@
 import random
 import pandas as pd
 
-n_samples = 10 # Amount of sim neonates
+n_samples = 10000000 # Amount of sim neonates
 rowlist = ['N' + str(i) for i in range(n_samples)] # Creating a list of names for sim neonates
 columnlist = ['P(Alcohol)', 'Alcohol', 'P(FASD | Alcohol)', 'FASD | Alcohol', 'P(NS | FASD)', 'P(Opiods)', 'Opiods', 'P(NOWS | Opiods)', 'NOWS | Opiods', 'P(NS | NOWS)', 'P(Smoker)', 'Smoker', 'P(NS | Smoker)', 'P(SSRI)', 'SSRI', 'P(NS | SSRI)', 'P(NS)', 'NS']
 
@@ -84,7 +84,7 @@ detcond(hasSSRI, probSSRI)
 
 # Reevaluating probabilities as the factors are correlated with each other
 
-# Reevaluating alcohool
+# Reevaluating alcohol
 reeval(probalcohol, hasopiods, hasalcohol, 0.517, 0.801, n_samples)
 reeval(probalcohol, hassmoker, hasalcohol, 0.138, 0.633, n_samples)
 reeval(probalcohol, hasSSRI, hasalcohol, 0.065, 0.504, n_samples)
