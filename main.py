@@ -1,7 +1,9 @@
 import random
 import pandas as pd
+import scipy.stats
+import plotly.express as px
 
-n_samples = 10000 # Amount of sim neonates
+n_samples = 1000000 # Amount of sim neonates
 rowlist = ['N' + str(i) for i in range(n_samples)] # Creating a list of names for sim neonates
 columnlist = ['P(Alcohol)', 'Alcohol', 'P(FASD | Alcohol)', 'FASD | Alcohol', 'P(NS | FASD)', 'P(Opiods)', 'Opiods', 'P(NOWS | Opiods)', 'NOWS | Opiods', 'P(NS | NOWS)', 'P(Smoker)', 'Smoker', 'P(NS | Smoker)', 'P(SSRI)', 'SSRI', 'P(NS | SSRI)', 'P(NS)', 'NS']
 
@@ -16,12 +18,12 @@ def detcond(list_condition, list_prob): # Determines whether the neonate suffers
         else:
             list_condition.append(False)
 
-def probgiven(list_prob, list_condition, min_value, max_value, mindefault, maxdefault): # Finds the probability given a factor
+def probgiven(list_prob, list_condition, min_value, max_value): # Finds the probability given a factor
     for k in list_condition:
         if k == True:
             list_prob.append(float(random.uniform(min_value, max_value)))
         elif k == False:
-            list_prob.append(float(random.uniform(mindefault, maxdefault))) # Adds range of control probability, excluding given condition
+            list_prob.append(0.0)
         else:
             print('An error occured')
 
@@ -39,25 +41,14 @@ def reeval(list_prob, list_condition_correlated, list_condition, min_value, max_
         else:
             print('An error occured')
             
-def reeval_detcond_final_probability(list_condition, list_prob, list_condition_2, list_condition_3, list_condition_4):
+def reeval_detcond_final_probability(list_condition, list_prob):
     for m in range(n_samples):
-        a = 1
-        if list_condition_2[m] == True:
-            a += 1
-        if list_condition_3[m] == True:
-            a += 1
-        if list_condition_4[m] == True:
-            a += 1
-        list_prob[m] /= a
-        if list_condition[m] == True:
-            continue
-        elif list_condition[m] == False:
-            if list_prob[m] >= random.uniform(0, 1):
-                list_condition[m] = True
-            else:
-                continue
+        if list_prob[m] > 1:
+            list_prob[m] = 1
+        if list_prob[m] >= random.uniform(0, 1):
+            list_condition[m] = True
         else:
-            print('An error occured')
+            continue
 
 # Determining probabilities and which have drinking mothers
 probalcohol = []
@@ -107,39 +98,39 @@ reeval(probSSRI, hassmoker, hasSSRI, 0.02368, 0.1915, n_samples)
 
 
 # Determining final probability and outcome:
-reeval_detcond_final_probability(hasalcohol, probalcohol, hasopiods, hassmoker, hasSSRI)
-reeval_detcond_final_probability(hasopiods, probopiods, hasalcohol, hassmoker, hasSSRI)
-reeval_detcond_final_probability(hassmoker, probsmoker, hasalcohol, hasopiods, hasSSRI)
-reeval_detcond_final_probability(hasSSRI, probSSRI, hasalcohol, hasopiods, hassmoker)
+reeval_detcond_final_probability(hasalcohol, probalcohol)
+reeval_detcond_final_probability(hasopiods, probopiods)
+reeval_detcond_final_probability(hassmoker, probsmoker)
+reeval_detcond_final_probability(hasSSRI, probSSRI)
 
 
 # Determining probabilities and which suffer from FASD
 probFASD = []
-probgiven(probFASD, hasalcohol, 0.00106, 0.11322, 0.0, 0.0)
+probgiven(probFASD, hasalcohol, 0.00106, 0.11322)
 hasFASD = []
 detcond(hasFASD, probFASD)
 
 # Determining probabilities and which suffer from NOWS
 probNOWS = []
-probgiven(probNOWS, hasopiods, 0.002, 0.0233, 0.0, 0.0)
+probgiven(probNOWS, hasopiods, 0.002, 0.0233)
 hasNOWS = []
 detcond(hasNOWS, probNOWS)
 
 # Determining final probabilities of NS from different conditions
 probNS_FASD = []
-probgiven(probNS_FASD, hasFASD, 0.03, 0.21, 0.0, 0.0)
+probgiven(probNS_FASD, hasFASD, 0.03, 0.21)
 probNS_NOWS = []
-probgiven(probNS_NOWS, hasNOWS, 0.021, 0.11, 0.0, 0.0)
+probgiven(probNS_NOWS, hasNOWS, 0.021, 0.11)
 probNS_smoker = []
-probgiven(probNS_smoker, hassmoker, 0.0123, 0.044, 0.0, 0.0)
+probgiven(probNS_smoker, hassmoker, 0.0123, 0.044)
 probNS_SSRI = []
-probgiven(probNS_SSRI, hasSSRI, 0.01, 0.093, 0.0, 0.0)
+probgiven(probNS_SSRI, hasSSRI, 0.01, 0.093)
 
 
 # Running calculations for final probability of NS
 probNS = []
-for m in range(n_samples):
-    probNS.append(random.uniform(0.00081, 0.005) * (not (hasFASD[m] or hasNOWS[m] or hassmoker[m] or hasSSRI[m])) + probNS_FASD[m] + probNS_NOWS[m] + probNS_smoker[m] + probNS_SSRI[m])
+for n in range(n_samples):
+    probNS.append(random.uniform(0.00081, 0.005) * (not (hasFASD[n] or hasNOWS[n] or hassmoker[n] or hasSSRI[n])) + probNS_FASD[n] + probNS_NOWS[n] + probNS_smoker[n] + probNS_SSRI[n])
 
 # Determining which will suffer from NS
 hasNS = []
@@ -166,6 +157,4 @@ df[columnlist[15]] = probNS_SSRI
 df[columnlist[16]] = probNS
 df[columnlist[17]] = hasNS
 
-# print(df)
-
-# df.to_excel('Simulated Neonates.xlsx')
+df.to_excel('Simulated Neonates FINAL.xlsx')
