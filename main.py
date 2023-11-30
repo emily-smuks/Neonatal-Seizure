@@ -1,6 +1,5 @@
 import random
 import pandas as pd
-import scipy.stats
 import plotly.express as px
 
 n_samples = 1000000 # Amount of sim neonates
