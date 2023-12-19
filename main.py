@@ -78,7 +78,7 @@ detcond(hasSSRI, probSSRI)
 # Reevaluating probabilities as the factors are correlated with each other
 
 # Reevaluating alcohol
-reeval(probalcohol, hasopiods, hasalcohol, 0.517, 0.801, 0.02976, 0.13851 n_samples)
+reeval(probalcohol, hasopiods, hasalcohol, 0.517, 0.801, 0.02976, 0.13851, n_samples)
 reeval(probalcohol, hassmoker, hasalcohol, 0.138, 0.633, 0.01098, 0.02925, n_samples)
 reeval(probalcohol, hasSSRI, hasalcohol, 0.065, 0.504, 0.02980, 0.20053, n_samples)
 
@@ -158,4 +158,4 @@ df[columnlist[15]] = probNS_SSRI
 df[columnlist[16]] = probNS
 df[columnlist[17]] = hasNS
 
-df.to_excel('Simulated Neonates FINAL.xlsx')
+df.to_excel('Simulated Neonates FINAL v2.xlsx')
