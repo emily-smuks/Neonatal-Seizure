@@ -23,7 +23,7 @@ def probgiven(list_prob, list_condition, min_value, max_value): # Finds the prob
         elif k == False:
             list_prob.append(0.0)
         else:
-            print('An error occured')
+            print('An error occurred)
 
 def reeval(list_prob, list_condition_correlated, list_condition, min_value_t, max_value_t, min_value_f, max_value_f, n_samples): # Reevaluates a probability given a new circumstance
     for l in range(n_samples):
@@ -33,16 +33,16 @@ def reeval(list_prob, list_condition_correlated, list_condition, min_value_t, ma
             elif list_condition[l] == True:
                 continue # since the condition is already true, no need to reevaluate
             else:
-                print('An error occured')
+                print('An error occurred)
         elif list_condition_correlated[l] == False:
             if list_condition[l] == False:
                 list_prob[l] += random.uniform(min_value_f, max_value_f) # using prob given that the condition is false
             elif list_condition[l] == True: 
                 continue # since the condition is already true, no need to reevaluate
         else:
-            print('An error occured')
+            print('An error occurred)
             
-def reeval_detcond_final_probability(list_condition, list_prob):
+def reeval_detcond_final_probability(list_condition, list_prob, n_samples):
     for m in range(n_samples):
         if list_prob[m] > 1:
             list_prob[m] = 1
@@ -99,10 +99,10 @@ reeval(probSSRI, hassmoker, hasSSRI, 0.02368, 0.1915, 0.00822, 0.06819, n_sample
 
 
 # Determining final probability and outcome:
-reeval_detcond_final_probability(hasalcohol, probalcohol)
-reeval_detcond_final_probability(hasopiods, probopiods)
-reeval_detcond_final_probability(hassmoker, probsmoker)
-reeval_detcond_final_probability(hasSSRI, probSSRI)
+reeval_detcond_final_probability(hasalcohol, probalcohol, n_samples)
+reeval_detcond_final_probability(hasopiods, probopiods, n_samples)
+reeval_detcond_final_probability(hassmoker, probsmoker, n_samples)
+reeval_detcond_final_probability(hasSSRI, probSSRI, n_samples)
 
 
 # Determining probabilities and which suffer from FASD
